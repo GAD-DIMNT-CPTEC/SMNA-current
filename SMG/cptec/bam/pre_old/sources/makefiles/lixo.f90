@@ -1,3 +1,0 @@
-     PROGRAM
-
-     END PROGRAM
