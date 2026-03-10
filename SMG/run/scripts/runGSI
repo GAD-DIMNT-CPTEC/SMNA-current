@@ -1,0 +1,166 @@
+#!/bin/bash
+#-----------------------------------------------------------------------------#
+#           Group on Data Assimilation Development - GDAD/CPTEC/INPE          #
+#-----------------------------------------------------------------------------#
+#BOP
+#
+# !SCRIPT: runGSI
+#
+# !DESCRIPTION:
+#   Driver script to configure and execute a single GSI (Gridpoint Statistical
+#   Interpolation) analysis cycle. This script performs the following steps:
+#     - Parses user-provided options (truncation, levels, cycle date, etc.)
+#     - Prepares the execution environment and working directories
+#     - Stages required input files (backgrounds, observations, fixed files)
+#     - Retrieves bias-correction coefficients if available
+#     - Submits the GSI run to the batch system
+#     - Post-processes outputs (merge diagnostics, copy satbias files)
+#
+#   Supports optional bias-correction cycling mode (BC) for radiance data.
+#
+# !CALLING SEQUENCE:
+#   ./runGSI <options>
+#
+# !OPTIONS:
+#   -t  <int>   Background truncation (BkgTrunc)           [REQUIRED]
+#   -l  <int>   Background levels (BkgNLevs)               [REQUIRED]
+#   -p  <str>   Background file prefix (BkgPrefix)         [REQUIRED]
+#   -I  <yyyymmddhh> Analysis datetime (AnlDate)           [REQUIRED]
+#   -T  <int>   Analysis truncation (AnlTrunc); default: BkgTrunc
+#   -bc <int>   Bias-correction cycle index (BcCycle); default: 0
+#               - If >0: BC mode active (IsBC=true)
+#               - If =0: normal mode (IsBC=false)
+#   -om <bool>  One-observation test (ObsMod=true|false); default: false
+#   -h          Print usage/help and exit
+#   --gsi-ntasks <int>   MPI tasks for runGSI (default: 128).
+
+#
+# !GLOBAL FLAGS (forwarded when set):
+#   --ntasks INT | --job-name NAME | -Q/--queue Q | --walltime HH:MM | -v/--verbose | --dry-run
+#
+# !EXAMPLE:
+#   ./runGSI -t 299 -l 64 -p CPT -T 254 -I 2015050100 -bc 10 -om true
+#
+# !REVISION HISTORY:
+#   20 Aug 2018 - J. G. de Mattos - Initial version
+#   20 Sep 2025 - Refactored: ProTex docs, BC-cycle support, modular workflow
+#
+# !REMARKS:
+#   - Designed for coupled BAM+GSI runs on CPTEC/INPE HPC clusters
+#   - By default, GSI analysis truncation = BAM truncation
+#   - Analysis can be computed at a different truncation, but output is always
+#     written at the BAM resolution for consistency with background fields
+#
+# !NOTES:
+#   HPC resources são parseados globalmente por __parse_args__:
+#     --ntasks (mpi_tasks), --cpus-per-task (omp_threads),
+#     --nodes (nodes), --cores-per-node (cores_per_node), --procs (total_procs)
+#   Requires: inctime tool in PATH/env; helper 'usage' for -h.
+#   Safety: runs under local strict mode (set -euo pipefail) and restores on return.
+#   Compatibility: exports BcCycles as alias of BcCycle for older callers.
+#
+# !USES:
+#   runGSI_Functions.sh - core functions for staging, running, and post-processing
+#
+#EOP
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+#BOC
+
+# ---------------------------------------------------------------------------- #
+# Environment bootstrap: determine script location and load helper functions
+# ---------------------------------------------------------------------------- #
+__SRC="${BASH_SOURCE[0]}"
+while [[ -L "$__SRC" ]]; do
+  __LINK="$(readlink -- "$__SRC")"
+  if [[ "$__LINK" = /* ]]; then
+    __SRC="$__LINK"
+  else
+    __SRC="$(cd -- "$(dirname -- "$__SRC")" \
+              && cd -- "$(dirname -- "$__LINK")" && pwd)/$(basename -- "$__LINK")"
+  fi
+done
+export RUN_GSI_DIR="$(cd -- "$(dirname -- "$__SRC")" && pwd)"
+
+# Load core functions for runGSI workflow
+. "${RUN_GSI_DIR}/gsi_scripts/runGSI_Functions.sh"
+
+# ---------------------------------------------------------------------------- #
+# End environment bootstrap
+# ---------------------------------------------------------------------------- #
+
+# --- Define constants and parse command-line options
+constants
+ParseOpts "$@"
+
+# --- Define model sizes
+BAM_CoordSize "${AnlTrunc}"
+# Validate submultiple of 3600s quickly (bash):
+# Check whether TimeStep is an exact divisor of 3600 s (1 hour)
+if (( 3600 % TimeStep == 0 )); then
+  _log_debug "BAM TimeStep hour-aligned (Dt=%s s, 3600/%s=%d)" \
+             "$TimeStep" "$TimeStep" "$((3600/TimeStep))"
+else
+  _log_warn  "BAM TimeStep not aligned (Dt=%s s, 3600/%s=%.3f)" \
+             "$TimeStep" "$TimeStep" "$(awk -v t=$TimeStep 'BEGIN{print 3600/t}')"
+fi
+
+KMax=${AnlNLevs}
+JMax=$((JMax+2)) # +2 is required for GSI horizontal interpolation
+
+# ---------------------------------------------------------------------------- #
+# Directories
+# ---------------------------------------------------------------------------- #
+# Working directory for current analysis
+RunDir=${subt_run_gsi}/${AnlDate}
+if [ -e "${RunDir}" ]; then
+   rm -fr "${RunDir:?}"/*
+else
+   mkdir -p "${RunDir}"
+fi
+
+# Output directory for this analysis
+DataOutDir=${subt_gsi_dataout}/${AnlDate}
+mkdir -p "${DataOutDir}"
+
+# ---------------------------------------------------------------------------- #
+# Stage input files
+# ---------------------------------------------------------------------------- #
+CopyGSIExec "${execGSI}" "${RunDir}"        # Copy GSI executable
+if ! ${ObsMod}; then
+  linkObs "${AnlDate}" "${RunDir}"          # Link observations (unless one-observation test)
+fi
+StageBackgrounds "${RunDir}" "${BkgPrefix}" "${BkgDate}" "${BkgMRES}" "${AnlDate}" "${subt_model_bam}"
+FixedFiles "${AnlTrunc}" "${AnlNLevs}" "${RunDir}"
+
+# Bias-correction coefficients (satbias)
+getSatBias "${AnlDate}" "${BkgDate}" "${RunDir}" "${subt_gsi_dataout}"
+if (( result == 1 )); then
+  _log_warn "No satbias_out found in background date %s." "${BkgDate}"
+  _log_warn "If this is the first cycle, consider performing a bias-correction spin-up."
+  _log_warn "Otherwise, check why the file is missing (e.g., previous cycle failed or outputs not copied)."
+fi
+
+# ---------------------------------------------------------------------------- #
+# Run GSI
+# ---------------------------------------------------------------------------- #
+subGSI "${RunDir}" "${IMax}" "${JMax}" "${KMax}" \
+       "${AnlTrunc}" "${BkgTrunc}" "${AnlDate}" "${ObsMod}" "${IsBC}"
+if [ $? -eq 0 ]; then
+   echo -e "\033[34;1m [\033[m\033[32;2m OK \033[m\033[34;1m]\033[m"
+else
+   echo -e "\033[34;1m[\033[m\033[31;1m Fail \033[m\033[34;1m]\033[m"
+   exit 1
+fi
+
+# ---------------------------------------------------------------------------- #
+# Post-processing: merge diagnostics and copy outputs
+# ---------------------------------------------------------------------------- #
+mergeDiagFiles "${RunDir}" "${AnlDate}"
+
+CopyOutputsForCycle "${RunDir}" "${DataOutDir}" "${IsBC}" "${BcCycle}"
+
+#EOC
+#-----------------------------------------------------------------------------#
+
