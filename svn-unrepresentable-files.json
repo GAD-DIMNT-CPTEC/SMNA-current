@@ -1,0 +1,42 @@
+[
+  {
+    "path": "branch/SMNA_v3.0.0.t11889_closed/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "branch/SMNA_v3.0.0.t12717/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "branch/SMNA_v3.0.x/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "tag/SMNA_v3.0.0/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "tag/SMNA_v3.0.1/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "tag/SMNA_v3.0.2/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "tag/SMNA_v3.0.3/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  },
+  {
+    "path": "trunk/SMG/cptec/gsi/fix/.git",
+    "svn_sha1": "d89f2c03ebd9f2bac8dccc1b12db016abf9f5721",
+    "content_base64": "Z2l0ZGlyOiAuLi8uZ2l0L21vZHVsZXMvZml4Cg=="
+  }
+]

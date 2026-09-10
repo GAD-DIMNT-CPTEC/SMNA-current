@@ -1,0 +1,97 @@
+[
+  {
+    "svn": "branch/SMG_v2.2.0_closed",
+    "git": "legacy/SMG_v2.2.0_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMG_v2.2.1.t11508_closed",
+    "git": "legacy/SMG_v2.2.1.t11508_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMG_v2.2.1_closed",
+    "git": "legacy/SMG_v2.2.1_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA-Oper_closed",
+    "git": "legacy/SMNA-Oper_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA-sfc-Oper_closed",
+    "git": "legacy/SMNA-sfc-Oper_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t11824_closed",
+    "git": "legacy/SMNA_v3.0.0.t11824_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t11889_closed",
+    "git": "legacy/SMNA_v3.0.0.t11889_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t12230_closed",
+    "git": "legacy/SMNA_v3.0.0.t12230_closed",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t12717",
+    "git": "df02a7289ebf3b3be6e37c9562e3c7051550d907",
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.x",
+    "git": "legacy/SMNA_v3.0.x",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMG_v2.2.0",
+    "git": "refs/tags/SMG_v2.2.0",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.2.0",
+    "git": "refs/tags/SMNA_v2.2.0",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.3.0",
+    "git": "refs/tags/SMNA_v2.3.0",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.3.1",
+    "git": "refs/tags/SMNA_v2.3.1",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v3.0.0",
+    "git": "refs/tags/SMNA_v3.0.0",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v3.0.1",
+    "git": "refs/tags/SMNA_v3.0.1",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v3.0.2",
+    "git": "refs/tags/SMNA_v3.0.2",
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v3.0.3",
+    "git": "refs/tags/SMNA_v3.0.3",
+    "differences": []
+  },
+  {
+    "svn": "trunk",
+    "git": "legacy/main",
+    "differences": []
+  }
+]

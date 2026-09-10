@@ -1,0 +1,295 @@
+[
+  {
+    "svn": "branch/SMG_v2.2.0_closed",
+    "git": "legacy/SMG_v2.2.0_closed",
+    "svn_files": 4161,
+    "git_files": 4161,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMG_v2.2.1.t11508_closed",
+    "git": "legacy/SMG_v2.2.1.t11508_closed",
+    "svn_files": 23,
+    "git_files": 23,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMG_v2.2.1_closed",
+    "git": "legacy/SMG_v2.2.1_closed",
+    "svn_files": 4161,
+    "git_files": 4161,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA-Oper_closed",
+    "git": "legacy/SMNA-Oper_closed",
+    "svn_files": 2588,
+    "git_files": 2588,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA-sfc-Oper_closed",
+    "git": "legacy/SMNA-sfc-Oper_closed",
+    "svn_files": 2587,
+    "git_files": 2587,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t11824_closed",
+    "git": "legacy/SMNA_v3.0.0.t11824_closed",
+    "svn_files": 23,
+    "git_files": 23,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t11889_closed",
+    "git": "legacy/SMNA_v3.0.0.t11889_closed",
+    "svn_files": 12033,
+    "git_files": 12032,
+    "differences": [
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t12230_closed",
+    "git": "legacy/SMNA_v3.0.0.t12230_closed",
+    "svn_files": 249,
+    "git_files": 249,
+    "differences": []
+  },
+  {
+    "svn": "branch/SMNA_v3.0.0.t12717",
+    "git": "df02a7289ebf3b3be6e37c9562e3c7051550d907",
+    "svn_files": 12420,
+    "git_files": 12420,
+    "differences": [
+      [
+        ".gitattributes",
+        "git-only"
+      ],
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "branch/SMNA_v3.0.x",
+    "git": "legacy/SMNA_v3.0.x",
+    "svn_files": 11988,
+    "git_files": 11987,
+    "differences": [
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "tag/SMG_v2.2.0",
+    "git": "refs/tags/SMG_v2.2.0",
+    "svn_files": 4161,
+    "git_files": 4161,
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.2.0",
+    "git": "refs/tags/SMNA_v2.2.0",
+    "svn_files": 2580,
+    "git_files": 2580,
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.3.0",
+    "git": "refs/tags/SMNA_v2.3.0",
+    "svn_files": 2586,
+    "git_files": 2586,
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v2.3.1",
+    "git": "refs/tags/SMNA_v2.3.1",
+    "svn_files": 2585,
+    "git_files": 2585,
+    "differences": []
+  },
+  {
+    "svn": "tag/SMNA_v3.0.0",
+    "git": "refs/tags/SMNA_v3.0.0",
+    "svn_files": 12033,
+    "git_files": 12032,
+    "differences": [
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "tag/SMNA_v3.0.1",
+    "git": "refs/tags/SMNA_v3.0.1",
+    "svn_files": 11988,
+    "git_files": 11987,
+    "differences": [
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "tag/SMNA_v3.0.2",
+    "git": "refs/tags/SMNA_v3.0.2",
+    "svn_files": 11988,
+    "git_files": 11987,
+    "differences": [
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ]
+    ]
+  },
+  {
+    "svn": "tag/SMNA_v3.0.3",
+    "git": "refs/tags/SMNA_v3.0.3",
+    "svn_files": 11988,
+    "git_files": 12001,
+    "differences": [
+      [
+        "README.md",
+        "git-only"
+      ],
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ],
+      [
+        "docs/BAM_DELTAT.md",
+        "git-only"
+      ],
+      [
+        "docs/Bc.md",
+        "git-only"
+      ],
+      [
+        "docs/OBS_INPUT.md",
+        "git-only"
+      ],
+      [
+        "docs/PostAlt_comp.md",
+        "git-only"
+      ],
+      [
+        "docs/QC_GSI.md",
+        "git-only"
+      ],
+      [
+        "docs/README.md",
+        "git-only"
+      ],
+      [
+        "docs/Read_Prepbufr_Messages.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_egeon.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_pre-operacional.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_v3.0.1.md",
+        "git-only"
+      ],
+      [
+        "docs/paths.md",
+        "git-only"
+      ],
+      [
+        "docs/pcgsoi.md",
+        "git-only"
+      ],
+      [
+        "docs/qc_marker.md",
+        "git-only"
+      ]
+    ]
+  },
+  {
+    "svn": "trunk",
+    "git": "legacy/main",
+    "svn_files": 11988,
+    "git_files": 12002,
+    "differences": [
+      [
+        "README.md",
+        "git-only"
+      ],
+      [
+        "SMG/cptec/gsi/fix/.git",
+        "svn-only"
+      ],
+      [
+        "SMG/utils/git_release_flow.sh",
+        "git-only"
+      ],
+      [
+        "docs/BAM_DELTAT.md",
+        "git-only"
+      ],
+      [
+        "docs/Bc.md",
+        "git-only"
+      ],
+      [
+        "docs/OBS_INPUT.md",
+        "git-only"
+      ],
+      [
+        "docs/PostAlt_comp.md",
+        "git-only"
+      ],
+      [
+        "docs/QC_GSI.md",
+        "git-only"
+      ],
+      [
+        "docs/README.md",
+        "git-only"
+      ],
+      [
+        "docs/Read_Prepbufr_Messages.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_egeon.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_pre-operacional.md",
+        "git-only"
+      ],
+      [
+        "docs/SMNA_v3.0.1.md",
+        "git-only"
+      ],
+      [
+        "docs/paths.md",
+        "git-only"
+      ],
+      [
+        "docs/pcgsoi.md",
+        "git-only"
+      ],
+      [
+        "docs/qc_marker.md",
+        "git-only"
+      ]
+    ]
+  }
+]

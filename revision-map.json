@@ -1,0 +1,2517 @@
+[
+  {
+    "revision": 1,
+    "author": "joao.gerd",
+    "date": "2021-05-21T17:50:48.540953Z",
+    "message": "adicionando ramos de desenvolvimento",
+    "commits": [
+      "9f23f083ae09eeb30d2f735504b8d6c7aca94b1a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 2,
+    "author": "joao.gerd",
+    "date": "2021-05-21T17:56:53.572708Z",
+    "message": "adicionando scripts do sistema",
+    "commits": [
+      "2de482c93b2ac8be3a8b48dd69576fd77f4ef457",
+      "089794903577c77545fd3893ae218f1c5ed43ba5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 3,
+    "author": "joao.gerd",
+    "date": "2021-05-21T18:00:52.683271Z",
+    "message": "adicionando bam e gsi via svn:externals",
+    "commits": [
+      "645af17ac00943afe56f3c6df0359351c60acb28",
+      "2bf669de9bea00986c6e1e6f9bd02f0da9bd57ea"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 4,
+    "author": "joao.gerd",
+    "date": "2021-05-21T18:06:33.851320Z",
+    "message": "adicionando bam e gsi via svn:externals",
+    "commits": [
+      "48935efba918ad2b1edf3f64f74b81de33b1373b",
+      "0bb316a02a8e5427360f222296991e51f60e99f9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 5,
+    "author": "joao.gerd",
+    "date": "2021-05-21T19:37:16.310359Z",
+    "message": "incluindo inctime via svn externals",
+    "commits": [
+      "8f17d0f1b9b85fa5b63f0bf4b4516de966a58805",
+      "94aa67758e9c5ec1e70fca4494661f5b97cafca4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 6,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:05:08.206914Z",
+    "message": "Ajustes e correções de pequenos bugs",
+    "commits": [
+      "1ec13b2e3d18c302adfa8d8dbb1e95cfe82b0978",
+      "d8fcbf3a7df1473e932bc2d7888f4b8d599f6611"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 7,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:07:07.738307Z",
+    "message": "copiando trunk para branch",
+    "commits": [
+      "e4ef91d8867b215916a0e210d250a25e4aab17c2"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 8,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:13:55.068791Z",
+    "message": "removendo externals. Proximo commit será pra incluir localmente as\nferramentas",
+    "commits": [
+      "d3210210214ff7137fa5234c38159de038eeb1ef"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 9,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:32:14.211046Z",
+    "message": "Adicionando modelo, assimilação e ferramentas localmente. O external\nserá utilizado para o desenvolvimento, porém todas as TAGS utilizarão\numa versão local dos códigos que estiverem via externals:\n* bam: https://svn.cptec.inpe.br/bam/branch/BAM_V2.2.1 revisão 607\n* gsi: https://svn.cptec.inpe.br/gsi/branch/gsi_t9885 revisão 23\n* inctime: https://svn.cptec.inpe.br/inctime/trunk/inctime revisão 10",
+    "commits": [
+      "e1477be9915550a20f8fcca8ce5a3c9e11cf3819"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 10,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:33:57.234254Z",
+    "message": "Criando versão tag do sistema SMG.",
+    "commits": [
+      "580b3dbaf128e1f0eaa1ca2ab6910257fdd38736"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 11,
+    "author": "joao.gerd",
+    "date": "2021-05-25T20:34:34.876903Z",
+    "message": "Fechando branch de desenvolvimento da versão do SMG.",
+    "commits": [
+      "daa204c88fef09d327c117cd795829f2e4f9b639"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 12,
+    "author": "joao.gerd",
+    "date": "2021-05-28T14:19:02.491660Z",
+    "message": "Cópia da versão tag V2.2.0 para correção de bugs. Este branch é\ncandidato à versão tag V2.2.1",
+    "commits": [
+      "08cfc6c3df107764654a0f6325172e065841358d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 13,
+    "author": "joao.gerd",
+    "date": "2021-07-12T18:48:47.857522Z",
+    "message": "adiconando ferramenta para converter arquivo spectral em ponto de grade",
+    "commits": [
+      "a5af529dd203d43459f86ad5cab59e482ca7624d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 14,
+    "author": "joao.gerd",
+    "date": "2021-07-12T18:50:54.133678Z",
+    "message": "adiconado modulo de constants ao spec2grd",
+    "commits": [
+      "b7d308ebe9540a0aa64dc1ad33ed334860ca2a09"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 15,
+    "author": "joao.gerd",
+    "date": "2021-08-18T13:10:42.013295Z",
+    "message": "Deletando diretório bam_scripts. A partir deste momento o script\n*run_model.sh* está apontando para os scripts dentro do diretório do\nmodelo BAM. Então os scripts do BAM foram completamente adaptados para\nrodar no ciclo de assimilação, conforme descrito na tareda #10430 no\nrepositório do BAM.",
+    "commits": [
+      "33c0d6ede1643ff7c1b33be180f84020b5c1befe"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 16,
+    "author": "joao.gerd",
+    "date": "2021-09-06T15:24:03.495579Z",
+    "message": "Adicionando versão SMNA 2.2.0 (veja o cronograma \"aqui\":https://projetos.cptec.inpe.br/attachments/download/11664/bam_hib_ad_cronograma-final-corrigido-05052021.pdf).\n\nComo mencionado na versão tag anterior (SMG_v2.2.0), a propriedade svn externals será utilizada somente para o desenvolvimento, as *tags* utilizarão uma versão local dos códigos que foram desenvolvidos até o momento. \nEsta versão é composta pelos seguintes códigos:\n\n* SMNA/SMG:  https://svn.cptec.inpe.br/smna/trunk/SMG revisão r15\n* bam: https://svn.cptec.inpe.br/bam/branch/BAM_V2.2.1 revisão \"r960\":https://projetos.cptec.inpe.br/projects/gsi/repository/revisions/25 (Nota: Foram retirados os diretórios *pre_old* e *pre_documentação*)\n* gsi: https://svn.cptec.inpe.br/gsi/branch/gsi_t9885 revisão \"r25\":https://projetos.cptec.inpe.br/projects/gsi/repository/revisions/25\n* inctime: https://svn.cptec.inpe.br/inctime/trunk/inctime revisão \"r14\":https://projetos.cptec.inpe.br/projects/inctime/repository/revisions/14",
+    "commits": [
+      "4eb3a15de4eedd2bdf55e18a2b5841750f830432"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 17,
+    "author": "joao.gerd",
+    "date": "2022-05-03T20:22:35.441445Z",
+    "message": "Melhorias gerais nos scripts e correções de caminhos",
+    "commits": [
+      "e246118b90e8be101cf66826ef199762c5c14d5d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 18,
+    "author": "joao.gerd",
+    "date": "2022-05-23T17:35:39.770988Z",
+    "message": "Criando diretório da versão Tag 2.3.0 Veja wiki para detalhes.",
+    "commits": [
+      "5bd73f6bc79889dbc43fadbb73eda4f1bab1e7db"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 19,
+    "author": "joao.gerd",
+    "date": "2022-05-23T18:22:51.918984Z",
+    "message": "alterando caminho dos diretórios do BAM e GSI via svn externals\nsvn propedit svn:externals .\n\ngsi https://svn.cptec.inpe.br/gsi/trunk/gsi\nbam https://svn.cptec.inpe.br/bam/tag/BAM_V2.2.1",
+    "commits": [
+      "dd6453dc754c22c29a12e0ad793f93f4325d4489"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 20,
+    "author": "joao.gerd",
+    "date": "2022-05-23T18:58:37.325578Z",
+    "message": "Adicionando versão SMNA 2.3.0 .\n\nComo já mencionado nas versões tag anteriores, a propriedade svn externals será utilizada somente para desenvolvimento. As *tags* utilizarão uma versão local dos códigos que foram desenvolvidos até o momento.\nEsta versão é composta pelos seguintes códigos:\n\n* SMNA/SMG: https://svn.cptec.inpe.br/smna/trunk/SMG revisão r17\n* bam: https://svn.cptec.inpe.br/bam/tag/BAM_V2.2.1 revisão \"r1252\":https://projetos.cptec.inpe.br/projects/bam/repository/revisions/1252\n* gsi: https://svn.cptec.inpe.br/gsi/trunk/gsi revisão \"r26\":https://projetos.cptec.inpe.br/projects/gsi/repository/revisions/26\n* inctime: https://svn.cptec.inpe.br/inctime/tag/inctime_1.0.0 revisão \"r15\":https://projetos.cptec.inpe.br/projects/inctime/repository/revisions/15",
+    "commits": [
+      "abc26a5b7ff5e09f6b0e7a33a292698450756283"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 21,
+    "author": "jose.aravequia",
+    "date": "2022-09-27T16:54:59.925857Z",
+    "message": "Ajustes para possibilitar a compilação e uso do SMNA no EGEON com uso do compilador Intel e Openmpi.",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 22,
+    "author": "jose.aravequia",
+    "date": "2022-09-27T17:33:38.444010Z",
+    "message": "Deletando para corrigir comentário",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 23,
+    "author": "jose.aravequia",
+    "date": "2022-09-27T17:37:03.429101Z",
+    "message": "Ajustes associados a tarefa #11508 para possibilitar a compilação e uso do SMNA no EGEON com uso do compilador Intel e Openmpi.",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 24,
+    "author": "jose.aravequia",
+    "date": "2022-09-27T18:35:22.738818Z",
+    "message": "Removendo para criar sob o .../branches/",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 25,
+    "author": "jose.aravequia",
+    "date": "2022-09-27T18:41:22.404727Z",
+    "message": "Tarefa #11508 para possibilitar a compilação e uso do SMNA no EGEON com uso do compilador Intel e Openmpi.",
+    "commits": [
+      "b5d3b62d569c7a8c96c6feac8d8cb677254c2abd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 26,
+    "author": "jose.aravequia",
+    "date": "2022-09-28T13:31:47.946675Z",
+    "message": "Removendo para copiar novamente completo.",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 27,
+    "author": "jose.aravequia",
+    "date": "2022-09-28T13:35:09.404272Z",
+    "message": "Ajustes para possibilitar a compilação e o uso do SMNA no EGEON com uso do compilador Intel e Openmpi, tarefa #11508.",
+    "commits": [
+      "194f1d8827c931223e247bee2ac8731f89865e05"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 28,
+    "author": "joao.gerd",
+    "date": "2022-09-29T14:02:11.539717Z",
+    "message": "Criando diretório da versão Tag 2.3.1 para inclusão de nova versão do gsi com correção de bug, conforme descrito na tarefa #11521",
+    "commits": [
+      "c89bf4da0b6b094c3aa3b4c2c55f5f916f919899"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 29,
+    "author": "joao.gerd",
+    "date": "2022-09-29T17:29:41.475950Z",
+    "message": "Adicionando versão SMNA 2.3.0 .\n\nComo já mencionado nas versões tag anteriores, a propriedade svn externals será utilizada somente para desenvolvimento. As tags utilizarão uma versão local dos códigos que foram desenvolvidos até o momento.\nEsta versão é composta pelos seguintes códigos:\n\nSMNA/SMG: https://svn.cptec.inpe.br/smna/trunk/SMG revisão r19\nbam: https://svn.cptec.inpe.br/bam/tag/BAM_V2.2.1 revisão r1252\ngsi: https://svn.cptec.inpe.br/gsi/trunk/gsi revisão r33 (com correção de bug tarefa #11521)\ninctime: https://svn.cptec.inpe.br/inctime/trunk/inctime revisão r14",
+    "commits": [
+      "c7664df011df6d3473ae625d34a2d6ca22f50c40"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 30,
+    "author": "jose.aravequia",
+    "date": "2022-09-29T19:55:19.630683Z",
+    "message": "Ajustes da ligação de branch do externals .",
+    "commits": [
+      "5d234a9a402ddf69c13db9c2fe2be13c27bb547f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 31,
+    "author": "joao.gerd",
+    "date": "2022-11-07T13:12:39.789055Z",
+    "message": "Branch para desenvolvimento pré-operacional da assimilação.\nVeja tarefa #11570.",
+    "commits": [
+      "6117820ab5ec6b87c83081930e14bbce66d47107"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 32,
+    "author": "joao.gerd",
+    "date": "2022-11-28T15:33:10.727303Z",
+    "message": "Modificações Necessárias para corrigir bugs. Ver tarefa #11614",
+    "commits": [
+      "d31453e37459bf9753a9963778cb115d5800e34e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 33,
+    "author": "joao.gerd",
+    "date": "2022-11-28T18:32:29.741227Z",
+    "message": "bug fix (#11614)",
+    "commits": [
+      "9c3c432845d772fd0797cdab49d3964de9f77f86"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 34,
+    "author": "joao.gerd",
+    "date": "2022-11-30T14:28:16.741824Z",
+    "message": "bug fix! Correção de data da no diretório dos dados observados (#11614)",
+    "commits": [
+      "1f709e101db94dd131eb606cf23d42b8070b8827"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 35,
+    "author": "joao.gerd",
+    "date": "2022-11-30T15:04:40.430752Z",
+    "message": "bug fix! incluindo arquivo faltante (#11614)",
+    "commits": [
+      "2ea44c295908b7f8758b2900265c214ed254d8c9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 36,
+    "author": "joao.gerd",
+    "date": "2022-11-30T16:21:19.824993Z",
+    "message": "bug fix! Há um erro durante a execução do PBS do gsi, veja comentários em #11614",
+    "commits": [
+      "c20ffa03ff47fad6a59bb962ede1c24c8324ab1b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 37,
+    "author": "joao.gerd",
+    "date": "2023-02-09T12:59:18.943032Z",
+    "message": "Inclusão de umask a copia dos arquivos\nModificação do nome do aquivo OUT.MPI do runPre para melhor identificação em caso de erro.",
+    "commits": [
+      "565915e4fe3b70f1179de00090b39ed9d4491e9c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 38,
+    "author": "joao.gerd",
+    "date": "2023-02-09T15:23:18.041127Z",
+    "message": "Modificando umask dos jobs. Segundo o manual do qsub a opção -W umask=33 allows group and world read on the job's output",
+    "commits": [
+      "4181e11c8e9b1463ebc3893079ec4ec642454f5d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 39,
+    "author": "joao.gerd",
+    "date": "2023-02-10T20:02:32.954941Z",
+    "message": "Bug fix",
+    "commits": [
+      "4eef10b783711ec82d7d0e45cda08510b437bbd6"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 40,
+    "author": "joao.gerd",
+    "date": "2023-02-10T20:08:05.225866Z",
+    "message": "bug fix. Remoção da necessidade de mudança do umask do log do qsub do modelo. o Processo é feito diretamente pelo qsub.",
+    "commits": [
+      "08e6b223ff93c1ba11854b0403e8f25a47833ad8"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 41,
+    "author": "joao.gerd",
+    "date": "2023-02-15T15:23:34.031646Z",
+    "message": "colocando NetCDF como arquivo padrão de análise para o chopping",
+    "commits": [
+      "524918e116516e568e3c80e78232d744ce689fd3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 42,
+    "author": "joao.gerd",
+    "date": "2023-02-16T01:30:57.000743Z",
+    "message": "Incluindo opção para rodar pré somente com chopping saindo o ozonio.",
+    "commits": [
+      "370ace01e796fa690f99c432d1c81adca5dcc619"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 43,
+    "author": "joao.gerd",
+    "date": "2023-02-16T12:14:16.977137Z",
+    "message": "Removendo arquivo desnecessário.\nModificando nome do namelist de oz para chp",
+    "commits": [
+      "3537ba45b2ffdbec55a8bcab8b9aedd7acb7394d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 44,
+    "author": "joao.gerd",
+    "date": "2023-02-16T14:35:57.522066Z",
+    "message": "modificação na linha de rodada do runPre para o Ozonio e DAS",
+    "commits": [
+      "97ffee56dc1a62ac43f9f5056584ca4335d2f5de"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 45,
+    "author": "joao.gerd",
+    "date": "2023-02-17T18:22:21.431198Z",
+    "message": "Colocando variáveis somente no escopo local dentro das funções",
+    "commits": [
+      "8f21f1f80ddfe1e68706f06be5625cc88327f9fb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 46,
+    "author": "joao.gerd",
+    "date": "2023-03-03T20:32:33.267588Z",
+    "message": "Correção de bugs e melhoria nos scrips.\nFoi incluido também a diferença entre rodar o modelo para a assimilação\ne rodar o modelo para as previsões.\ncom a opção -das as previsões do modelo são geradas dentro do diretório\n\"DAS\", bem como os diretórios exec_${LABELI}, sem esta opção o modelo\nroda normalmente.\nutilizando a opção -das em conjunto com a opção -f, algumas confições\npré-determinadas são utilizadas durante o processo de previsão do modelo\ne os arquivos são gerados nos caminhos típicos do modelo.\n\nNeste commit também foi corrigido o problema para o uso do dado de GSPRO\nno gsiparm.nml\n\no Principal bug corrigido está relacionado à não geração dos arquivos de\nOzonio as 06 e 18 utc, que estavam relacionadas a um bug no scrip runPre",
+    "commits": [
+      "4507aeb37d7aacaabfecdfec1c7a5c643a71931a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 47,
+    "author": "joao.gerd",
+    "date": "2023-03-23T14:21:32.941191Z",
+    "message": "implementar modificações para rodar AD de superfície",
+    "commits": [
+      "0df9bfa94678c89cdadcc01f1c0f1064a3f11e9b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 48,
+    "author": "joao.gerd",
+    "date": "2023-04-11T19:40:59.671618Z",
+    "message": "Modificações necessárias para inclusão do runPos funcional.",
+    "commits": [
+      "2704c44701d568a101dc5a6288d76b6c87d2449a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 49,
+    "author": "joao.gerd",
+    "date": "2023-05-22T13:51:52.994773Z",
+    "message": "Branch para desenvolvimento da tarefa #11824",
+    "commits": [
+      "12e20e2bbef2c2585403c069ad69fd314f2e79c4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 50,
+    "author": "jose.aravequia",
+    "date": "2023-10-16T17:15:00.940160Z",
+    "message": "Desenvolver atividades da tarefa #11889 a partir da #11824 (nova versão do GSI)",
+    "commits": [
+      "afe752a62e0a97071f6ac1f1aa570e1914ea5f19"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 51,
+    "author": "jose.aravequia",
+    "date": "2023-10-18T19:26:27.437073Z",
+    "message": "2023-10-18 Ajustes parciais para implementar configurações de nova máquina HPC",
+    "commits": [
+      "b368d3f767a54a79525fb4898b32b7710ab6dcef"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 52,
+    "author": "jose.aravequia",
+    "date": "2023-10-27T17:17:44.938599Z",
+    "message": "Adicionadas opções para rodar GSI no EGEON, e ajustes no egeon_paths.conf para encontrar arquivos fixos.",
+    "commits": [
+      "436468397bfd5052e7147c4ecc746662917fa88d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 53,
+    "author": "jose.aravequia",
+    "date": "2023-11-24T11:53:16.819876Z",
+    "message": "Ajustando GSI para branch com nova Versão (GFSDA.v16.1.0), já com compilação preparada para EGEON",
+    "commits": [
+      "6d9ea9bd0828ccd05c163f6486b3668d0206e57c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 54,
+    "author": "jose.aravequia",
+    "date": "2023-11-24T13:24:50.319847Z",
+    "message": "Ajustes nos scripts",
+    "commits": [
+      "c5fc79efb8115fddc9b4fd983631fa8047052080"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 55,
+    "author": "jose.aravequia",
+    "date": "2023-11-24T22:58:29.551307Z",
+    "message": "Ajustes para nova versão GSI e ciclo egeon",
+    "commits": [
+      "b7bd57aedb57a8dcc697b6107aa64898f6c95f4c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 56,
+    "author": "jose.aravequia",
+    "date": "2023-11-25T14:38:02.889260Z",
+    "message": "Ajuste para compilar global_angupdate (substitui gsi_angupdate.exe)",
+    "commits": [
+      "6f66942ce8884b067250216157aea35b62b7a26e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 57,
+    "author": "jose.aravequia",
+    "date": "2023-11-27T20:12:43.820822Z",
+    "message": "Ajustes para Egeon em 27nov2023",
+    "commits": [
+      "57acc541451ee4d9565ef92872e157e9baae3838"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 58,
+    "author": "jose.aravequia",
+    "date": "2023-11-28T19:52:24.954607Z",
+    "message": "Ajustes de debug e substituição de inctime pelo uso do comando date do sistema",
+    "commits": [
+      "dcbb4ad2818d39cb6c87826b36d2df75fa73c1d5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 59,
+    "author": "jose.aravequia",
+    "date": "2023-11-30T20:33:09.333412Z",
+    "message": "Ajustes para rodar no EGEON",
+    "commits": [
+      "26c3036d88c73c5ee0416a8fdeeb5f0b105fa4f5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 60,
+    "author": "jose.aravequia",
+    "date": "2023-12-02T04:05:28.025350Z",
+    "message": "Ajuste durante debug do pre-processamento.",
+    "commits": [
+      "3e1b104ae7eaf664bebd0df716c653fb110a9cec"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 61,
+    "author": "jose.aravequia",
+    "date": "2023-12-06T16:39:11.830255Z",
+    "message": "Ajustes para refletir configuração usada na pre-operacao",
+    "commits": [
+      "99cab32fb85f69597f3181d3935f44d2a4b9f410"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 62,
+    "author": "jose.aravequia",
+    "date": "2023-12-08T00:42:16.845990Z",
+    "message": "Ajustes para rodar ciclo no Egeon",
+    "commits": [
+      "322067dec9c66800e66490e65632d6f14fc77967"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 63,
+    "author": "jose.aravequia",
+    "date": "2023-12-09T11:50:39.283139Z",
+    "message": "Ajustes de chamadas e debug . run_cycle.sh funcionando.",
+    "commits": [
+      "730303fe35b6cbe1d461efc580929db03a218e36"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 64,
+    "author": "jose.aravequia",
+    "date": "2023-12-11T23:21:28.411917Z",
+    "message": "Correção de bug que fazia repetidas cópia de todas as observações no Egeon",
+    "commits": [
+      "3a7414237caf0faeb428a6ddebd259817e2e9a9a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 65,
+    "author": "jose.aravequia",
+    "date": "2024-01-31T17:24:55.351495Z",
+    "message": "Ajustes para rodar previsões após ciclo de análise já rodado\ncriação de função inctime baseada no date do Linux",
+    "commits": [
+      "4fda2825d5477cb0cb868e28ccb6729e845a4405"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 66,
+    "author": "jose.aravequia",
+    "date": "2024-01-31T19:01:00.495815Z",
+    "message": "Ajuste de Tasks_Per_Node para EGEON na chamada do runPos",
+    "commits": [
+      "b52fb7e5c6b17ebe4dd50439ad95287dba18b21a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 67,
+    "author": "jose.aravequia",
+    "date": "2024-01-31T19:22:20.598684Z",
+    "message": "Ajustes para modo previsão, correção de script",
+    "commits": [
+      "7651906434fc5451902f74673636ead46d0c30c4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 68,
+    "author": "jose.aravequia",
+    "date": "2024-02-02T02:22:25.696270Z",
+    "message": "Pequeno ajuste de linha repetida no runGSI_Functions.sh e na chamadas do runPos no run_BAM_fcst.sh",
+    "commits": [
+      "2e53344ac56bfaadf22b450dd9debdb07e6cb9ab"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 69,
+    "author": "jose.aravequia",
+    "date": "2024-02-16T13:16:07.674813Z",
+    "message": "Ajuste numero de tasks por nó adequado para EGEON rodar pos-processamento com paralelismo MPI",
+    "commits": [
+      "b6a404ead6429113dfac9912e29ea2d17bcdd0b4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 70,
+    "author": "jose.aravequia",
+    "date": "2024-02-27T14:29:34.274338Z",
+    "message": "Acrescentado AnlDate ao runDir do GSI. Motivo: A chamada do GSI para uma outra data apagava os dados de job ainda em execução interrompendo o ciclo.",
+    "commits": [
+      "dd3480a66072165abd2ce9b69249d9d6721a6588"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 71,
+    "author": "jose.aravequia",
+    "date": "2024-03-01T11:20:51.462489Z",
+    "message": "Função constants() alterado para BcCycles=1  . Execução de 2024030100 do experimento no EGEON passa a usar esse setup.",
+    "commits": [
+      "4002bea78a6daf3f38a2c06e25a5c025a6b09d77"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 72,
+    "author": "jose.aravequia",
+    "date": "2024-03-11T14:26:08.528519Z",
+    "message": "Ajustes para permitir o ciclo de warmup dos coeficientes de Bias Correction",
+    "commits": [
+      "4ba5fa8c7a1f2aec6cba450c4effeefc6d4fb057"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 73,
+    "author": "jose.aravequia",
+    "date": "2024-03-22T21:42:39.313689Z",
+    "message": "Ajustes no Bias Correction segundo AdvancedGSIUserGuide_v3.5.0.0.pdf , Ming Hu, Using 8.4.4 Enhanced Radiance Bias Correction",
+    "commits": [
+      "508fb48d44229e21f7e930c85a78c6fc54d7e20e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 74,
+    "author": "sergio.ferreira",
+    "date": "2024-07-17T17:32:08.888095Z",
+    "message": "Inclusao do simple_check.sh e mbufrtools para verificacao de dados disponiveis para assimilacao",
+    "commits": [
+      "2543d92ba96776e088990a9295ab6b03bba44b83"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 75,
+    "author": "sergio.ferreira",
+    "date": "2024-09-05T19:27:22.804279Z",
+    "message": "inclusao dos fontes do mbufrtools e do bufrcheck",
+    "commits": [
+      "34322d3d19218d867b903921782aac390996be3a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 76,
+    "author": "sergio.ferreira",
+    "date": "2024-09-05T19:35:13.659662Z",
+    "message": "inclusao do diretorio",
+    "commits": [
+      "30da42658b4788ed3f7ddef9c2550c68ceba71a1"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 77,
+    "author": "sergio.ferreira",
+    "date": "2024-09-05T19:36:19.161819Z",
+    "message": "Inclusao dos fontes",
+    "commits": [
+      "c11a6d97ac9d1768ce5681ae49636e4f442eae5b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 78,
+    "author": "carlos.frederico",
+    "date": "2024-09-19T19:16:12.470337Z",
+    "message": "Issue #12231: creating the branch SMNA_v3.0.0.t12230 from SMNA_v3.0.0.t11889",
+    "commits": [
+      "f224e16f326faaaf990d547eb1740321a3b230d9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 79,
+    "author": "carlos.frederico",
+    "date": "2024-09-19T19:35:02.273659Z",
+    "message": "Issue #12230: updating some scripts to perform the system configuration and compilation on the Egeon machine.",
+    "commits": [
+      "dd1719b8dc4000b4f461e995f2c25647b928c014"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 80,
+    "author": "carlos.frederico",
+    "date": "2024-09-19T20:27:27.592529Z",
+    "message": "Updating scripts config_smg.ksh and etc/mach/egeon_paths.conf",
+    "commits": [
+      "8cd3073b2a7a5bb8316e68abd6e9c353d1f3d93e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 81,
+    "author": "carlos.frederico",
+    "date": "2024-09-20T13:14:01.629960Z",
+    "message": "Issue #12230: Creating a test copy.",
+    "commits": [
+      "3202b5d321557b79af4aff7f97fd757f7d9b69d0"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 82,
+    "author": "carlos.frederico",
+    "date": "2024-09-20T13:19:00.507070Z",
+    "message": "Issue #12230: Adding file compile.out",
+    "commits": [
+      "1cf0fddd4836b8e4cb847040aa51fcf069fc2681"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 83,
+    "author": "carlos.frederico",
+    "date": "2024-10-03T13:38:28.319193Z",
+    "message": "Issue #12250: Fixing inctime compilation (old version)",
+    "commits": [
+      "e845daf8dbd8b0ce12babc260f4db1277aa73c5d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 84,
+    "author": "carlos.frederico",
+    "date": "2024-10-08T18:45:13.595499Z",
+    "message": "Issue #12230: Fixing path names",
+    "commits": [
+      "02bbef0f0a415651309814d523c9d162616830a7"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 85,
+    "author": "carlos.frederico",
+    "date": "2024-10-09T20:29:59.658317Z",
+    "message": "Issue #12230: Fixing pre-processing command line in run_model.sh script",
+    "commits": [
+      "6e050ac2565bad506df463232ed3afe37dba3f87"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 86,
+    "author": "carlos.frederico",
+    "date": "2024-10-10T14:36:29.043811Z",
+    "message": "Issue #12230: Fixing pre-processing command and symlink to analysis file in the run_model.sh script",
+    "commits": [
+      "21acfa34cdb38f02c66fa89b29924765a055929e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 87,
+    "author": "carlos.frederico",
+    "date": "2024-10-10T20:09:04.431923Z",
+    "message": "Issue #12230: Fixing symlink for the NCEP analysis and adding correct endianness",
+    "commits": [
+      "a86d99edc876cd9fee5521eefbc7943ed7b559b7"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 88,
+    "author": "carlos.frederico",
+    "date": "2024-10-15T15:02:01.141665Z",
+    "message": "Issue #12230: Updating README file",
+    "commits": [
+      "57a5e0944bc1218885d5ea79bd718fc74de38472"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 89,
+    "author": "carlos.frederico",
+    "date": "2024-10-29T14:37:13.488973Z",
+    "message": "Removendo branch de testes",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 90,
+    "author": "carlos.frederico",
+    "date": "2024-10-29T15:03:53.232116Z",
+    "message": "Alterando o branch do svn externals para a tag BAM_V2.2.1-r1308",
+    "commits": [
+      "620d951c63e8bbb8f988491ed08efe849721c54f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 91,
+    "author": "carlos.frederico",
+    "date": "2024-10-29T15:44:06.615415Z",
+    "message": "Alterando o branch do svn externals para o branch gsi_t11824 do GSI",
+    "commits": [
+      "4c25e594259e1c4d68f65653e26ad06382cbdad2"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 92,
+    "author": "joao.gerd",
+    "date": "2024-11-04T18:49:03.899298Z",
+    "message": "pequenas modificacoes nos scripts de configuracao",
+    "commits": [
+      "bad230685f67f1446caca893982699cc10954f94"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 93,
+    "author": "joao.gerd",
+    "date": "2025-02-19T19:12:37.964434Z",
+    "message": "modificando scripts de configuracao e compilacao",
+    "commits": [
+      "15491c84e320a8b9c6a8db074ce5abf3fcb6f82f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 94,
+    "author": "joao.gerd",
+    "date": "2025-02-22T00:50:10.579917Z",
+    "message": "bug fix on detect_hpc_system",
+    "commits": [
+      "c5dc04e3ee913074f053bae1ad5fc242f931f1cf"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 95,
+    "author": "joao.gerd",
+    "date": "2025-02-25T13:47:14.090933Z",
+    "message": "Bug fix: hostname egeon corrigido.",
+    "commits": [
+      "972ad74e0f9e5efa296dfb1b967190afbe958dc5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 96,
+    "author": "joao.gerd",
+    "date": "2025-02-27T12:29:36.418149Z",
+    "message": "bug fix",
+    "commits": [
+      "3dfc0786ad72df2d59eaa58bcc3f695fbdd8df7e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 97,
+    "author": "joao.gerd",
+    "date": "2025-02-28T23:45:42.419429Z",
+    "message": "Inclue definicao de WRAPPER para compilacao do modelo BAM. Define para nao compilar o global_angupdate (sera verificado posteriormente)",
+    "commits": [
+      "a23eeab2775bf07bef40b32fe5929ede79615295"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 98,
+    "author": "joao.gerd",
+    "date": "2025-03-01T00:59:10.823652Z",
+    "message": "bug fix",
+    "commits": [
+      "5cd564e6e146822e42634c30ec9c34efd35b14ff"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 99,
+    "author": "joao.gerd",
+    "date": "2025-03-01T17:23:11.399122Z",
+    "message": "Enhancements to build and environment setup scripts\n\n- config_smg.ksh:\n  - Added 'export LC_ALL=\"en_US.UTF-8\"' to ensure consistent locale settings on EGEON cluster.\n\n- etc/smg_setup.sh:\n  - Refactored the build process by introducing the 'compile_component' function.\n  - Improved modularity by reducing redundant compilation commands.\n  - Enhanced error handling to check for missing directories before compilation.\n  - Used 'mkdir -p' to ensure build directories exist before execution.\n  - Replaced explicit 'make' calls with 'make -j256' for parallel compilation.\n  - Changed 'module purge' to 'module -q purge' to suppress unnecessary messages.",
+    "commits": [
+      "bd1049767a8c8121d1e20167768b3d113c3223d0"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 100,
+    "author": "joao.gerd",
+    "date": "2025-03-01T17:33:38.166057Z",
+    "message": "Updating svn:externals to reference BAM_V2.2.2 instead of BAM_V2.2.1 to prevent unintended modifications to the tag.",
+    "commits": [
+      "31051ffa6db39b29bb404145cbb9f65cf91c2dab"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 101,
+    "author": "joao.gerd",
+    "date": "2025-03-03T21:45:44.289365Z",
+    "message": "bug fix",
+    "commits": [
+      "2245aab57595505d7a14aab605a767df448d3110"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 102,
+    "author": "joao.gerd",
+    "date": "2025-03-03T21:47:41.319904Z",
+    "message": "bug fix",
+    "commits": [
+      "a18a63bed87e1ed5acce9bdad812272a89d2f055"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 103,
+    "author": "joao.gerd",
+    "date": "2025-03-04T16:54:18.371321Z",
+    "message": "Fix misconfigured paths in config files",
+    "commits": [
+      "f8d6d3c59ff3aefa48d667adf1f307aaed575961"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 104,
+    "author": "joao.gerd",
+    "date": "2025-03-04T20:17:29.861672Z",
+    "message": "correct file name",
+    "commits": [
+      "271d1ac5d6ea3bf26ec7481d9c623bcbf830af14"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 105,
+    "author": "joao.gerd",
+    "date": "2025-03-06T16:47:40.624980Z",
+    "message": "bug fix",
+    "commits": [
+      "87afe6bf34fdb164e36a5d39b8e9069ec7f743cb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 106,
+    "author": "joao.gerd",
+    "date": "2025-03-06T20:43:19.033981Z",
+    "message": "Include local cmake",
+    "commits": [
+      "5f2ac11cc09fe9b54f71d958a8b6a9b55568e909"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 107,
+    "author": "joao.gerd",
+    "date": "2025-03-27T14:53:42.840300Z",
+    "message": "Improve error handling and clarify ignored lines in the following files:\n\n- config_smg.ksh\n- etc/smg_setup.sh\n\nChanges include enhanced error reporting, better handling of unknown systems, and improved message clarity for users.",
+    "commits": [
+      "433a4f39d21baffef2a497073975dbca7918d572"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 108,
+    "author": "joao.gerd",
+    "date": "2025-03-27T16:09:34.464176Z",
+    "message": "Added missing 'work_bam' variable to SMG/etc/egeon_paths.conf\n\n- Included the 'work_bam' variable in the egeon_paths.conf file, which was previously missing.\n- Updated configuration to ensure proper path handling for the 'work_bam' directory.",
+    "commits": [
+      "c054bfc31cf5d54b20dfa1ad2626102759240e0e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 109,
+    "author": "carlos.frederico",
+    "date": "2025-05-01T18:19:22.141004Z",
+    "message": "Fixing the copy of fixed files. Note: some BAM boundary condition files (ocean_depth.G00450, salt_ltm_month.G00450, water_type.G00450 and temp_ltm_month.G00450) must be placed in /pesq/share/das/public/BAM/MODEL/datain. For now, they are placed in /mnt/beegfs/carlos.bastarz/BAMFIX/model/datain.",
+    "commits": [
+      "2af3a2992636241e38f9cae7c6188446148e9220"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 110,
+    "author": "carlos.frederico",
+    "date": "2025-05-07T14:32:34.329042Z",
+    "message": "Updating some script and configuration files to allow one to compile the branch on the beegfs disk. Note: this is not the final commit.",
+    "commits": [
+      "5837daa3e4a72ac9a1e9ca68d78002eda95aa81a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 111,
+    "author": "carlos.frederico",
+    "date": "2025-05-21T12:53:31.924452Z",
+    "message": "Fixing some bugs and changing observation list to assimilate (changes are still to be made)",
+    "commits": [
+      "b021a1ee3a29b95b8144027f9b6d4e4a64cc6d99"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 112,
+    "author": "carlos.frederico",
+    "date": "2025-05-21T19:40:41.036478Z",
+    "message": "Fixing the runModel command line arguments (including -py and -px)",
+    "commits": [
+      "be956dab852cc44a08c3b914f8a785c7058759e2"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 113,
+    "author": "carlos.frederico",
+    "date": "2025-05-22T01:50:42.221984Z",
+    "message": "Fixing the copy of boundary condition files",
+    "commits": [
+      "a5691bf5956301314ff78fd49b11020b8f4e2f60"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 114,
+    "author": "carlos.frederico",
+    "date": "2025-05-22T18:46:17.475025Z",
+    "message": "Fixing the copy of the Hybridlevels files",
+    "commits": [
+      "e62b740626112f8c0b3580a0a08ce21d8e7c91f4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 115,
+    "author": "carlos.frederico",
+    "date": "2025-05-22T19:19:58.154673Z",
+    "message": "Fixing the copy of the fixed model datain files",
+    "commits": [
+      "4ac30d4b7aab819cd360a303cfc54223b3743f8b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 116,
+    "author": "carlos.frederico",
+    "date": "2025-05-23T18:29:04.874995Z",
+    "message": "Adding inctime and gsi ang update utilities compilation to smg_setup.sh",
+    "commits": [
+      "b14b16177357cc31657a573caf38353ef5dfa0d7"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 117,
+    "author": "carlos.frederico",
+    "date": "2025-05-23T18:48:17.871880Z",
+    "message": "Adding option to compile the inctime utility and making default to compile the sat bias ang update utility",
+    "commits": [
+      "a798a1ef2f9ae48fa8cb287a8199c9de58132c65"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 118,
+    "author": "carlos.frederico",
+    "date": "2025-05-23T19:16:31.253762Z",
+    "message": "Fixing the inctime utility compilation",
+    "commits": [
+      "9c1dd04d61bed8bd33b69292253778a9b161f0aa"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 119,
+    "author": "carlos.frederico",
+    "date": "2025-05-29T18:17:03.723964Z",
+    "message": "Fixing root instalation path discovery in scripts",
+    "commits": [
+      "843fe7e75316cfe3e92c3c396c4f7ffeeb9b87ab"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 120,
+    "author": "carlos.frederico",
+    "date": "2025-06-02T19:13:55.391327Z",
+    "message": "Fixing the path to CRTM files and the creation of datain/out gsi directories",
+    "commits": [
+      "fdddccad16e789a841f31b9c6f006e69076de736"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 121,
+    "author": "carlos.frederico",
+    "date": "2025-06-04T13:27:32.152332Z",
+    "message": "Fixing gsi.x copy and path",
+    "commits": [
+      "2046411552e985085404d4c1def0006d57268930"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 122,
+    "author": "carlos.frederico",
+    "date": "2025-07-08T19:36:22.598433Z",
+    "message": "Including new CRTM coefficients (see /pesq/share/das/public_tmp/GSI3.4/tmp/crtm-2.4.0_emc.1) and fixing the copy/link process for these coefficients to be used with GSI. These changes were made because the ATMS data requires emissivity coefficients that were not available in the previous dataset.",
+    "commits": [
+      "bbb01e0e9c74cd7ef2f445a086956973460db447"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 123,
+    "author": "joao.gerd",
+    "date": "2025-08-06T02:08:14.623278Z",
+    "message": "[feature] Improved copy_fixed_files function with progress bar\n\n- Added visual progress bar with unicode blocks (█, ░)\n- copy_with_progress now accepts a custom progress message\n- copy_dir_with_progress passes messages as well\n- Cleaned up formatting and error handling\n- Documented in English using BOP/EOP format",
+    "commits": [
+      "7585ccb5db4a5f33feec1723e09018e2042a351f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 124,
+    "author": "joao.gerd",
+    "date": "2025-08-06T20:52:22.261702Z",
+    "message": "[FEATURE] Add function copy_ncep_inputs to smg_setup.sh for NCEP data retrieval\n\n- New function copy_ncep_inputs added to copy atmospheric analysis and SST\n  files from structured NCEP input archive.\n- Uses global variables: $ncep_gfs (source), $subt_pre_bam (destination).\n- Accepts a single argument YYYYMMDDHH to determine the input time.\n- Includes progress display and file existence checks.\n- Integrated with existing setup script (smg_setup.sh).",
+    "commits": [
+      "9a0d8fd7d17be6f437daf23bf033594ec3402d33"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 125,
+    "author": "joao.gerd",
+    "date": "2025-08-06T21:12:11.790503Z",
+    "message": "[UPDATE] Improved execution flow and input handling in SMG setup scripts\n\n- Updated `config_smg.ksh` to allow function execution with arbitrary arguments (e.g., `copy_ncep_inputs YYYYMMDDHH`);\n- Modified `execute_function` to pass all parameters beyond the first one to the called function;\n- Enhanced documentation in `config_smg.ksh` and `smg_setup.sh` with ProTex-style comments;\n- Added robust input parsing and progress output for `copy_ncep_inputs`;\n- Minor formatting and shell style improvements (quoting, spacing, echo style).\n\nTested on EGEON with command:\n  ./config_smg.ksh copy_ncep_inputs 2025070100",
+    "commits": [
+      "368cd8542b8be1c3c56df1caeaa834452b40cd61"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 126,
+    "author": "luiz.sapucci",
+    "date": "2025-09-01T20:15:41.347390Z",
+    "message": "Revisão para ajustar a adição dos dados do atms do satélite NOAA21 e AMSU-A do MetOp-C, verdetahes na essue #67 https://github.com/GAD-DIMNT-CPTEC/readDiag/issues/67 e também correção de um 'bug' ao forçar o monitoramento dos dados do NOAA20 e NOAA21 do ATMS e MetOp-C do AMSUA, ver detalhs na #62 https://github.com/GAD-DIMNT-CPTEC/readDiag/issues/62",
+    "commits": [
+      "7670b41aa0c469ff5095e5af966ec029b8b806af"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 127,
+    "author": "luiz.sapucci",
+    "date": "2025-09-03T21:38:52.152134Z",
+    "message": "revisão para corrigir um bug no ciclo da BC e de atualizar o gsiparm.anl.cold para o cilco de BC adiconiaondo os satelites metOp-C no AMASUA e o NOAA-21 no ATMS",
+    "commits": [
+      "cb4383f72adf556558c2b976abdc3fd019a2bf3e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 128,
+    "author": "luiz.sapucci",
+    "date": "2025-09-04T12:40:04.476589Z",
+    "message": "revisão para pequenos ajustes retirando comentários de debug no runGSI",
+    "commits": [
+      "b038cf5fb87acb363fcea5bc7b2950426e0f25e9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 129,
+    "author": "joao.gerd",
+    "date": "2025-09-05T15:23:46.781146Z",
+    "message": "run_model.sh: bootstrap mais robusto (runPre.func + EnvironmentalVariables), layout MPI/OMP automático via getMPIinfo, uso de -p  no runPre/runModel e remoção de duplicidades",
+    "commits": [
+      "0d4514f06a56be421b57e175b008af76ef467672"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 130,
+    "author": "joao.gerd",
+    "date": "2025-09-18T01:58:07.891914Z",
+    "message": "SMG core: centralizar setup, paths e help; remover duplicações\n\nconfig_smg.ksh\n- Move o sourcing de etc/smg_setup.sh para o início do main() (uma única vez)\n- Remove sourcing duplicado e a chamada direta a use_local_cmake (setup centralizado)\n- Melhora o help: usa show_help; adiciona fallback listando funções quando necessário\n- Mantém mensagens de instalação (SMG_ROOT)\n\netc/mach/egeon_paths.conf\n- home_smg = ${HOME}/${nome_smg} (em vez de ${RootDir})\n- public_gdad = /pesq/share/das/public\n- public_gsi  = ${public_gdad}/GSI_NCEP\n- Remove caminhos/entradas legadas (public_tmp, plus_crtm antigo)\n\netc/smg_setup.sh\n- Atualiza índice de comandos (configure, compile, copy_ncep_inputs, testcase, help)\n- Implementa logging padronizado (_log_msg + helpers) com opção -f\n- Consolida _parse_args (-v/-q/-y/-f/--dry-run/--restore e seleção de componentes)\n- vars_export: leitura/expansão idempotente de mach/${hpc_name}_paths.conf\n- detect_hpc_system revisado e consistente com BAM/EGEON\n- _use_local_cmake: checagem de versão mínima (CMAKE_VERSION_MIN), override -c, download/extração robustos\n- copy_ncep_inputs: suporta ncep-gfs e pre-year; validações e modo --dry-run\n- Rotinas de cópia via rsync com progresso (TTY) e fallback",
+    "commits": [
+      "a1ad26bb68d8843164821b17dbc0d29dda44b7bc"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 131,
+    "author": "joao.gerd",
+    "date": "2025-09-22T14:31:55.539832Z",
+    "message": "Infra/SMG: refatoração de setup, helpers e scripts GSI + run_cycle\n\n- Novo SMG/etc/__helpers__.sh com utilitários genéricos (logging, strict mode, path detection).\n- smg_setup.sh: refatoração ampla, modularização de cópia de “fixed files” e validações; +2100 linhas adicionadas / -439 removidas.\n- runGSI_Functions.sh: grande reorganização de funções (link/copy de backgrounds, fixed e obs; checagens de ambiente; I/O robusto); +1750 / -718.\n- runGSI: simplificação de opções, mensagens e delegação às funções reutilizáveis; -265 linhas antigas.\n- run_cycle.sh: documentação em inglês (ProTex), padronização de flags, melhor tratamento de erros; +309 / -301.\n- config_smg.ksh e mach/egeon_paths.conf: limpeza de variáveis, defaults mais seguros e paths consistentes.\n\nImpacto: base mais estável e reutilizável, com melhor observabilidade, menor acoplamento e setup previsível no Egeon.",
+    "commits": [
+      "fd0eed2e5723cdca6239bbf98423a85217ae2750"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 132,
+    "author": "joao.gerd",
+    "date": "2025-09-22T14:44:03.971241Z",
+    "message": "[core] atualizar run_cycle.sh (bug fix BC)",
+    "commits": [
+      "1bb786194173caf79966c6f11a0161903a52e7c5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 133,
+    "author": "joao.gerd",
+    "date": "2025-09-23T16:12:22.359112Z",
+    "message": "Refactor helpers and update configs\n\n- __helpers__.sh: ajustes e melhorias nas funções utilitárias\n- smg_setup.sh: ajustes na configuração e carregamento de variáveis",
+    "commits": [
+      "acdefe7ec030d487b9400a91e58de1d584788850"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 134,
+    "author": "joao.gerd",
+    "date": "2025-09-23T16:17:02.672362Z",
+    "message": "Add initialization scripts and refactor run workflow\n\nNew files:\n- __init__.sh, scripts/__init__.sh, scripts/gsi_scripts/__init__.sh\n  • Introduced initialization stubs to organize shell modules and allow\n    structured sourcing of helper functions across scripts.\n\nModified:\n- run_cycle.sh\n  • Refactored script initialization and sourcing logic.\n  • Improved environment handling and error checking.\n  • Simplified workflow control for model cycle execution.\n\n- scripts/gsi_scripts/runGSI_Functions.sh\n  • Clarified function definitions with improved structure.\n  • Enhanced readability and consistency of GSI helper routines.\n\n- scripts/runGSI\n  • Integrated functions from runGSI_Functions.sh.\n  • Added option to control Bias Correction (BC) cycles externally.\n  • Simplified run flow and reduced duplication.\n\n- scripts/run_model.sh\n  • Externalized post-processing (runPos) step from run_model.sh to be handled\n    by the workflow layer.\n  • Improved error handling and logging.\n\n- scripts/run_obsmake.sh\n  • Refactored observation pre-processing step for clarity.\n  • Enhanced modularization to better integrate with run_cycle.sh.\n\nOverall:\n- Introduced a more modular structure for the assimilation workflow.\n- Reduced redundancy and improved maintainability of scripts.",
+    "commits": [
+      "352e1acac1c52cb0d163ae66df0b4be99a698dbd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 135,
+    "author": "joao.gerd",
+    "date": "2025-09-23T16:19:52.579404Z",
+    "message": "Update config_smg.ksh to centralize environment variable export\n\n- Added call to vars_export for automatic loading of cluster-specific paths\n- Simplified sourcing of configuration by delegating to etc/mach/${hpc_name}_paths.conf\n- Improved maintainability and consistency of environment setup",
+    "commits": [
+      "4fc043a21aef1cd708eaafca92e33e182ffb9ea6"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 136,
+    "author": "joao.gerd",
+    "date": "2025-09-23T17:11:37.297183Z",
+    "message": "fix path",
+    "commits": [
+      "2539ceedf3f0b6aced24546e410adeb3eb39e2c8"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 137,
+    "author": "joao.gerd",
+    "date": "2025-09-24T18:24:49.074735Z",
+    "message": "bug fix",
+    "commits": [
+      "b568ced0c1316eb4058526b5ee94d04801a2f702"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 138,
+    "author": "joao.gerd",
+    "date": "2025-09-25T11:50:17.780952Z",
+    "message": "bug fix",
+    "commits": [
+      "628c750a177c5760d7ed2b3647bb9388fb9fc077"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 139,
+    "author": "joao.gerd",
+    "date": "2025-09-25T16:52:19.387163Z",
+    "message": "Add project root marker (.smg_root) for bootstrap scripts",
+    "commits": [
+      "6823207f97ab35c8ef7f0b6193b1dc870b92902a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 140,
+    "author": "joao.gerd",
+    "date": "2025-09-25T19:12:45.551272Z",
+    "message": "[run_model - pre] remove ozone from GFS anl",
+    "commits": [
+      "0a75302217361916d0342a435a133039c4536cfc"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 141,
+    "author": "joao.gerd",
+    "date": "2025-09-28T22:57:47.570941Z",
+    "message": "Refactor workflow scripts and cleanup legacy init loaders\n\nRemoved:\n- __init__.sh (migrated helper/loader logic)\n- scripts/__init__.sh\n- scripts/gsi_scripts/__init__.sh\n\nModified:\n- run_cycle.sh: major refactor (argument parsing, logging, dry-run support)\n- scripts/run_model.sh: updated interface and logging\n- scripts/run_obsmake.sh: extended options, improved robustness\n- scripts/gsi_scripts/runGSI_Functions.sh: streamlined functions, updated calls)",
+    "commits": [
+      "6470391fde0b7290e42e69e87518389508e46285"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 142,
+    "author": "joao.gerd",
+    "date": "2025-09-28T23:00:38.577236Z",
+    "message": "Refactor core helpers and add initialization script\n\nAdded:\n- etc/__init__.sh: new initialization loader\n\nModified:\n- config_smg.ksh: simplified configuration (removed unused blocks)\n- etc/__helpers__.sh: major refactor (logging, arg parsing, env management)\n- etc/smg_setup.sh: streamlined setup script",
+    "commits": [
+      "88af85fe9c95d7cc90ad49921a841c4e362ea1f3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 143,
+    "author": "joao.gerd",
+    "date": "2025-10-03T13:25:42.249043Z",
+    "message": "Atualizações no SMG:\n- Ajustes nos helpers (__helpers__.sh) e inicialização (__init__.sh)\n- Atualização de paths (egeon_paths.conf)\n- Melhorias em scripts de execução (run_cycle.sh, runGSI, runGSI_Functions.sh, run_obsmake.sh)\n- Atualização em config_smg.ksh e smg_setup.sh\n- Novo script deploy_smg.sh para envio de arquivos\n- Inclusão de scripts de teste (teste.sh, etc/teste.sh)",
+    "commits": [
+      "47e3fe3fdebf8ed4d08f4a8f9ed46291d672f22b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 144,
+    "author": "joao.gerd",
+    "date": "2025-10-03T13:39:34.535571Z",
+    "message": "bug fix",
+    "commits": [
+      "ce992d3853194dd2f642b1d6bb3f406c294e214d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 145,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:00:02.884377Z",
+    "message": "Vendor externals: remove svn:externals em cptec/ e utils/ e adiciona cptec/gsi, cptec/bam e utils/inctime congelados nas revisões atuais",
+    "commits": [
+      "efa2cbd7fde5f2acc037c41fc5bfb694de4eb098"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 146,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:11:11.050769Z",
+    "message": "Tag SMNA_v3.0.0 com externals incorporados; egeon_paths.conf ajustado para a tag",
+    "commits": [
+      "e894504a595d84f68c1ed45a56df2c1fe5e842f8"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 147,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:14:40.479164Z",
+    "message": "Removendo trunk antigo para promover SMNA_v3.0.0",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 148,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:15:11.997570Z",
+    "message": "Promove tag SMNA_v3.0.0 a novo trunk",
+    "commits": [
+      "787841dc59c03864fbb89bb4c4fd7048b4379a42"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 149,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:16:39.817738Z",
+    "message": "Abre branch de manutenção 3.0.x a partir do trunk (SMNA_v3.0.0)",
+    "commits": [
+      "57ab8c3d546a35f8818699048d2340583ecb66ef"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 150,
+    "author": "joao.gerd",
+    "date": "2025-10-03T14:26:12.166547Z",
+    "message": "Fecha branches após SMNA_v3.0.0 (renomeados com sufixo _closed)",
+    "commits": [
+      "f6759e8eb12cacb3a2b7a88a63d0602c52af78d9",
+      "e4f273c310bedeaa269c7bea2d593632d2601221",
+      "e95da311391786de607949487d938fda06d84bed",
+      "94981c0bd069d1e943e680d05761ae1faaffd25e",
+      "80b702b9213912ae33bdd591592f6888ddffb0dc",
+      "8d8627c24a26942391a49804639a2d6336403e57",
+      "8b20809f2b3be969927a51c240b7ed47ce3710b6"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 151,
+    "author": "joao.gerd",
+    "date": "2025-10-04T22:05:26.913256Z",
+    "message": "Corrige nome da branch: SMNA_3.0.x → SMNA_v3.0.x",
+    "commits": [
+      "984259bcb7af6b528cbc5777e1b7a8acf03b9635"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 152,
+    "author": "joao.gerd",
+    "date": "2025-10-04T22:13:09.914465Z",
+    "message": "Cria diretorio SMNA no trunk",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 153,
+    "author": "joao.gerd",
+    "date": "2025-10-04T22:13:10.286458Z",
+    "message": "Corrige layout do trunk: trunk/SMG -> trunk/SMNA/SMG",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 154,
+    "author": "joao.gerd",
+    "date": "2025-10-04T22:51:48.210688Z",
+    "message": "#BOP\n!REVISION: 04 Oct 2025\n!AUTHOR:   J. G. de Mattos\n!SUBJECT:  Add validation and deployment utilities for EGEON\n!FILES:\n  M etc/mach/egeon_paths.conf\n  A utils/check_paths.sh\n  A utils/deploy_smg.sh\n  A utils/svn_release_flow.sh\n  D utils/cmake-3.31.6-linux-x86_64.tar.gz\n!DESCRIPTION:\n  • Updated egeon_paths.conf with reorganized structure (SMNA_v3.0.0 root format)\n  • Added check_paths.sh for automatic path validation and creation\n  • Added deploy_smg.sh and svn_release_flow.sh for deployment and release automation\n  • Removed obsolete cmake-3.31.6 binary archive\n#EOP",
+    "commits": [
+      "ab39789fad2a4de38543f28e3f3915711f92f47e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 155,
+    "author": "joao.gerd",
+    "date": "2025-10-04T23:25:54.620179Z",
+    "message": "#BOP\n!REVISION: 05 Oct 2025\n!AUTHOR:   J. G. de Mattos\n!SUBJECT:  Remove obsolete build artifacts and log files\n!DESCRIPTION:\n  • Removed compiled modules (*.mod) and temporary log files from BAM/GSI sources\n  • Cleanup performed using clean_dist.sh utility\n#EOP",
+    "commits": [
+      "1e16e90c8a2a6ac0df8c383f78485078c6229a46"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 156,
+    "author": "joao.gerd",
+    "date": "2025-10-04T23:30:25.220070Z",
+    "message": "#BOP\n!REVISION: 05 Oct 2025\n!AUTHOR:   J. G. de Mattos\n!SUBJECT:  Add clean_dist.sh utility for cleanup and SVN maintenance\n!FILES:\n  A utils/clean_dist.sh\n!DESCRIPTION:\n  • Added new cleanup utility script (clean_dist.sh)\n  • Removes build artifacts, temporary files, and optionally binary data\n  • Supports --dry-run, --svn, --yes and --bin flags for flexible operation\n  • Enhances maintainability and consistency across SMG builds\n#EOP",
+    "commits": [
+      "bb1742ffedb91cb34af5bd510bf37b7f50344b0b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 157,
+    "author": "joao.gerd",
+    "date": "2025-10-13T18:42:17.414908Z",
+    "message": "Refactor env export, enhance obs_make and GSI sensor copy logging, update fix templates\n- Replaced deprecated vars_export with _env_export across helper and setup scripts.\n- Added interactive progress bar and structured logging in runGSI_Functions.sh for sensor coefficient copy.\n- Improved run_obsmake.sh:\n  • Fixed sed usage() to stop at first #EOP block.\n  • Enhanced observation copy/link logic with clearer pattern handling and improved verbose/dry-run behavior.\n- Updated gsiparm.anl:\n  • Standardized parameter syntax (removed unnecessary quotes around identifiers).\n  • Reorganized and extended observation dataset templates (HIRS4, MHS, SBUV/2, GOME, OMI, MLS).\n- Improves workflow transparency, consistency, and logging clarity across SMG preprocessing steps.",
+    "commits": [
+      "4d9fc78a0ab5f5a61d608833ba4128f75a3b0ccb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 158,
+    "author": "joao.gerd",
+    "date": "2025-10-13T19:48:20.174384Z",
+    "message": "#BOP\n!REVISION: 13 Oct 2025\n!AUTHOR: J. G. de Mattos\n!SUBJECT: Refine BAM_CoordSize() and standardize timestep documentation\n!FILES:\nM cptec/bam/run/EnvironmentalVariables\nM run/scripts/gsi_scripts/runGSI_Functions.sh\nM run/scripts/runGSI\n!DESCRIPTION:\n• Standardized inline timestep comments across all truncations in BAM_CoordSize()\n  using the format “# 3600/<Δt>=<n> (aligned / not aligned)” for clarity and auditability\n• Updated T254 entry: replaced TimeStep=255 (non-submultiple of 3600) with 225 s\n  to maintain correct synchronization of radiation calls at 1h and 3h intervals\n• Added detailed ProTex-style header describing Δt selection rationale:\n  numerical stability, CFL control, and physics alignment\n• Verified that all other Δt values are exact submultiples of 3600 s or empirically stable\n• Linked to external documentation (Δt rationale and stability analysis):\n  https://gist.github.com/joaogerd/3b95b4c29b29736c197bd3946a2f91fd\n#EOP",
+    "commits": [
+      "2684be4f07848eaa8abca715f803258ce185202c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 159,
+    "author": "joao.gerd",
+    "date": "2025-10-13T19:51:56.959260Z",
+    "message": "fix string handling bug in runGSI script\nrun/scripts/runGSI",
+    "commits": [
+      "76061ee4d4115c871c731e4e7bbad0d794383c25"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 160,
+    "author": "joao.gerd",
+    "date": "2025-10-14T00:24:29.769153Z",
+    "message": "#BOP\n!REVISION: 13 Oct 2025\n!AUTHOR: J. G. de Mattos\n!SUBJECT: Enhance build verification report and GSI compile block\n!FILES:\nM etc/smg_setup.sh\n!DESCRIPTION:\n• Added structured reporting buckets (READY_ROWS, BUILT_ONLY_ROWS, RUNTIME_ONLY_ROWS, MISSING_ROWS)\n  for clearer end-of-run summaries.\n• Implemented _print_group() function to render colorized, aligned tables for each report category.\n• Improved post-copy reclassification logic: items fixed via rsync or cp are dynamically promoted to READY status.\n• Enhanced diagnostic messages for directory creation and copy failures.\n• Updated GSI compilation section:\n  – Fixed path verification to use home_gsi_bin instead of home_gsi_src.\n  – Adjusted copy paths to home_gsi_src/gsi/gsi.x.\n  – Refined error message to clarify unset path variables (home_gsi || home_gsi_src || home_gsi_bin).\n!NOTES:\nThese changes improve the readability and accuracy of the build validation phase in smg_setup.sh,\nproviding a comprehensive visual summary and robust error handling for the GSI compile and copy workflow.\n#EOP",
+    "commits": [
+      "bfe8a33f2ed4fa1d26e0f1bc4ca31a73d6c72764"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 161,
+    "author": "joao.gerd",
+    "date": "2025-10-15T12:32:06.634967Z",
+    "message": "#BOP\n!REVISION: 15 Oct 2025\n!AUTHOR: J. G. de Mattos\n!SUBJECT: Standardize output labels and improve readability in smg_setup.sh\n!FILES:\nM etc/smg_setup.sh\n!DESCRIPTION:\n• Renamed path label “beegfs” → “submit” for consistency across environments\n• Adjusted column headers (“Search Paths”) and output alignment (13-char width)\n• Added visual separators between report entries for clearer readability\n• Updated log messages to reflect new terminology (“SUBMIT_HOME”)\n• Enhances clarity of build/report outputs for multi-site SMNA workflows\n#EOP",
+    "commits": [
+      "220359e9f0b772a4288a169003cb3b7f4fcb5888"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 162,
+    "author": "carlos.frederico",
+    "date": "2025-10-30T12:32:50.637546Z",
+    "message": "Adicionando arquivo run/POSTIN-GRIB.template e modificando script run/runPos",
+    "commits": [
+      "9cff84cca8d7ccb0e0987174677849df96ba9b83"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 163,
+    "author": "carlos.frederico",
+    "date": "2025-10-30T12:42:30.450495Z",
+    "message": "Adicionando cópia dos dados do POS/datain",
+    "commits": [
+      "a31867dfbdb1b19bb943b952f8cb9ca6bdff86fd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 164,
+    "author": "joao.gerd",
+    "date": "2026-01-20T19:32:10.917233Z",
+    "message": "Correcao de bug relacionado ao tipo de inicializacao do modelo durante o ciclo. Estava como cold start, e agora foi corrigido para warm start",
+    "commits": [
+      "b3782fe84e439f9efd76a9f9618fb18ef19a0458"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 165,
+    "author": "helena.azevedo",
+    "date": "2026-01-22T13:31:21.287756Z",
+    "message": "",
+    "commits": [
+      "38f097dd288361a7313da4f6f69f3a5447747d60"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 166,
+    "author": "helena.azevedo",
+    "date": "2026-01-22T14:55:04.345403Z",
+    "message": "Retificando o commit da revisao r165. Foram alteradas as linhas 427 e 428, de IM e JM para IMax e JMax.",
+    "commits": [
+      "8711c59fa32040f0b6bedbc810a4be4701f44800"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 167,
+    "author": "joao.gerd",
+    "date": "2026-01-23T12:15:06.294351Z",
+    "message": "Make improvements branch optional in release flow.\n\nAllow svn_release_flow.sh to run without --impr-branch, skipping improvements branch creation and preserving the source branch.",
+    "commits": [
+      "b6f53f4e70587f7e87547553dc5a4758970565a7"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 168,
+    "author": "joao.gerd",
+    "date": "2026-01-23T12:16:12.778774Z",
+    "message": "Release SMNA_v3.0.1 (tag): create tag SMNA_v3.0.1",
+    "commits": [
+      "ef9480968c92d144b325b1234e2566ab11d8ebf1"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 169,
+    "author": "joao.gerd",
+    "date": "2026-01-23T12:16:13.016205Z",
+    "message": "Release SMNA_v3.0.1 (tag): remove existing trunk path",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 170,
+    "author": "joao.gerd",
+    "date": "2026-01-23T12:16:13.187774Z",
+    "message": "Release SMNA_v3.0.1 (tag): initialize trunk from SMNA_v3.0.x",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 171,
+    "author": "joao.gerd",
+    "date": "2026-02-26T19:25:15.634552Z",
+    "message": "gsiparm.anl: clarify OBS_INPUT semantics and align dval/dthin/dsfcalc settings\n\n- Rewrite OBS_INPUT header comments based on code inspection (real behavior).\n- Document dval as satellite weighted-thinning factor (not enable/disable flag) and note no effect for PREPBUFR.\n- Expand/standardize dthin and dsfcalc descriptions and add note about pre-minimization role.\n- Add per-section column headers for readability (Conventional, GPS-RO, radiances, etc.).\n- Update example obs lines to match adopted dval/dthin/dsfcalc values (AMSUA/ATMS and related sections) and keep legacy lines commented.",
+    "commits": [
+      "ab33e0f9c173bec6d22a4b5e08cc97c53648d042"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 172,
+    "author": "joao.gerd",
+    "date": "2026-02-26T19:28:27.503598Z",
+    "message": "Automated release flow: create tag SMNA_v3.0.2",
+    "commits": [
+      "f55b39cba70f2fb4c1fe3c03b7f4e277a8eeaa19"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 173,
+    "author": "joao.gerd",
+    "date": "2026-02-26T19:28:28.038931Z",
+    "message": "Automated release flow: remove existing trunk path",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 174,
+    "author": "joao.gerd",
+    "date": "2026-02-26T19:28:28.403190Z",
+    "message": "Automated release flow: initialize trunk from SMNA_v3.0.x",
+    "commits": [],
+    "status": "structural/unmapped; original log retained"
+  },
+  {
+    "revision": 175,
+    "author": "liviany.viana",
+    "date": "2026-03-10T19:13:42.107859Z",
+    "message": "Remove  line 505",
+    "commits": [
+      "58cb5684e557e13de26d7151aaa13c1bec8a8a31"
+    ],
+    "status": "new SVN commit"
+  },
+  {
+    "revision": 176,
+    "author": "liviany.viana",
+    "date": "2026-03-10T19:15:17.166651Z",
+    "message": "muda ntask no boostrap",
+    "commits": [
+      "9eedfb44f35ba16750c0b85815e48aaf1e3c6fbf"
+    ],
+    "status": "new SVN commit"
+  },
+  {
+    "revision": 177,
+    "author": "liviany.viana",
+    "date": "2026-03-10T19:18:31.390269Z",
+    "message": "Automated release flow: create tag SMNA_v3.0.3",
+    "commits": [
+      "1a3ad545ba31481e6670e1669d8f782c9ec005b6"
+    ],
+    "status": "new SVN commit"
+  },
+  {
+    "revision": 178,
+    "author": "liviany.viana",
+    "date": "2026-03-10T19:18:31.849806Z",
+    "message": "Automated release flow: remove existing trunk path",
+    "commits": [
+      "f80186dffb4c785bcb40d1f67e275aa42cc6768b"
+    ],
+    "status": "new SVN commit"
+  },
+  {
+    "revision": 179,
+    "author": "liviany.viana",
+    "date": "2026-03-10T19:18:32.114343Z",
+    "message": "Automated release flow: initialize trunk from SMNA_v3.0.x",
+    "commits": [
+      "3dcb0a6aa400a1cc83f19a0a5073e7269b44d6b3"
+    ],
+    "status": "new SVN commit"
+  },
+  {
+    "revision": 180,
+    "author": "caroline.viezel",
+    "date": "2026-04-30T21:35:57.959135Z",
+    "message": "Copiando o trunk na revisão 122 para o branch associado a tarefa #12717",
+    "commits": [
+      "6c9e879d4f58c2a25a89307046a0e5e8c624726d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 181,
+    "author": "caroline.viezel",
+    "date": "2026-05-11T19:55:39.171504Z",
+    "message": "Atualizando links externos",
+    "commits": [
+      "14c6f63905f5876ec3649e28c441571c77b7fa90"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 182,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T00:47:57.847058Z",
+    "message": "Removendo svn:external da biblioteca",
+    "commits": [
+      "698da7d0ed1de9f80def96061d2ddcfdeceb4848"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 183,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T16:30:53.027800Z",
+    "message": "Adicionando arquivos da pasta bam local: BAM_V2.2.2 revisao 1340",
+    "commits": [
+      "cd98df28fd8106e8f6d0c0cc1df108cf9907494e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 184,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T18:45:32.902991Z",
+    "message": "Criando estrutura da pasta gsi",
+    "commits": [
+      "e91b9e3f6f99bf29fe42fd4865c32a37995e476d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 185,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T18:54:38.291785Z",
+    "message": "Adicionando arquivos da pasta doc do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "9ede988e35ce38e800f56f17d08f0a8339550755"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 186,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T18:59:26.147638Z",
+    "message": "Adicionando arquivos da pasta fix do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "366d1ae98f431de8f8df878789e57e085e6f65db"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 187,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:12:43.229712Z",
+    "message": "Adicionando arquivos da pasta jobs do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "8f1b776cc8e77eb4da60910da9082af89681ef57"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 188,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:14:09.018468Z",
+    "message": "Adicionando arquivos da pasta modulefiles do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "0e447b370621c1f7e3c4b0501c409b2340ccb96f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 189,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:15:47.825018Z",
+    "message": "Adicionando arquivos da pasta regression do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "23368dba4022b88961384133aca993342cc42781"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 190,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:18:37.931226Z",
+    "message": "Adicionando arquivos da pasta scripts do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "2074710c899ba815d18f67bb4465b56bad49745d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 191,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:24:31.936086Z",
+    "message": "Adicionando arquivos da pasta src do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "c4afb0742abc038d18f8fe26734e972abaf06151"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 192,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:29:07.952135Z",
+    "message": "Adicionando arquivos da pasta unit-tests do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "bfe86e15d8ba29b2f2e659985ed72f0bb0cf249f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 193,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T19:30:12.038966Z",
+    "message": "Adicionando arquivos da pasta ush do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "255690dfbc9a3ab2f2d0a26df87a25e0e780873c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 194,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:09:53.272433Z",
+    "message": "Criando estrutura da pasta gsi/util",
+    "commits": [
+      "ec2448858c76e7c27388841a8cd07022db6a8288"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 195,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:28:33.811155Z",
+    "message": "Criando estrutura da pasta gsi/util/cmake-3.20.5-linux-x86_64",
+    "commits": [
+      "0edcbe4a0459d6e27327476f8ede4d94fd04ceeb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 196,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:31:28.509832Z",
+    "message": "Criando estrutura da pasta gsi/util/cmake-3.20.5-linux-x86_64/share",
+    "commits": [
+      "72ab376c3f8e7f28ca2ca2a16930c556deaf60db"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 197,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:37:27.575708Z",
+    "message": "Criando estrutura da pasta gsi/util/cmake-3.20.5-linux-x86_64/share/cmake-3.20",
+    "commits": [
+      "9b674792b2f600d7c87fa4ba0c10b2330ec7d5ef"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 198,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:46:32.647448Z",
+    "message": "Criando estrutura da pasta gsi/util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help",
+    "commits": [
+      "6a8fca1c22922ef4c7b53771e0d5d6fa24cab2fd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 199,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:49:55.858988Z",
+    "message": "Add arquivos da pasta util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help/variable do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "edf75ac1ad7093008602040edd4a600163a9f4e3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 200,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:52:18.238630Z",
+    "message": "Add arquivos da pasta util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help/release do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "d80ef0e399e80057fabd0f307d4e38525d4f43c9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 201,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:53:30.396260Z",
+    "message": "Add arquivos da pasta util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help/prop_tgt do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "4b2a524dbf56375376e482b16acd080c99729d30"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 202,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:55:06.958799Z",
+    "message": "Add arquivos da pasta util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help/prop_test do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "f797f36675a88030d7fa2767532a613691b9d472"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 203,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T20:57:43.997605Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Help do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "1a161c64711f8d9e2b539efc13b6dd4467fc4dc4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 204,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:09:01.460347Z",
+    "message": "Criando estrutura da pasta gsi/util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Modules",
+    "commits": [
+      "fa5732544cad92de75bd5d732cfd4fe4745028cb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 205,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:09:51.412011Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Modules/Compiler do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "065cb79a61732523f12f99d7007a2cac33ec82eb"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 206,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:12:17.574761Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Modules/Internal do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "574a226d6a9a101302539a5a2b669cab8b48b505"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 207,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:14:34.102126Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Modules/Platform do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "16404dab0cb2fb8f680e9a5e4db90567874746b0"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 208,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:16:49.633445Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Modules do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "17891963fac91d766a0237516b8757ad25d94dd5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 209,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:19:17.938161Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20/Templates do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "fca39fdceceed52352a2cf92c692abb7dd9988d9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 210,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:20:12.111791Z",
+    "message": "Add arquivos das subpastas util/cmake-3.20.5-linux-x86_64/share/cmake-3.20 do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "ee8bc7e28cf40834d6be4c3728528f673009da19"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 211,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:21:59.674501Z",
+    "message": "Add arquivos das pastas util/cmake-3.20.5-linux-x86_64/share do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "d5f028cdad325f4f7abd8d21ab2c67f99b8e305d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 212,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:23:13.156819Z",
+    "message": "Add arquivos das pastas util/cmake-3.20.5-linux-x86_64 do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "56bc186179323d0a4946eba7af898c5695f44a0c"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 213,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:29:13.982026Z",
+    "message": "Add subpastas da pasta util/GEN_BE_V2.0 do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "1c37d8bd3732e40d504e088d01a305c4a67b6c8f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 214,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:34:37.272670Z",
+    "message": "Add subpastas da pasta util/EnKF do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "fc3a08bd9b34e77fe2fe5224b5bd53d323ab60e4"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 215,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:37:55.491496Z",
+    "message": "Add subpastas da pasta util/Radiance_Monitor do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "2447edd14e712caae4a9ead8f7f94f5dd604d0d7"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 216,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:41:55.786060Z",
+    "message": "Add subpastas da pasta util/Ozone_Monitor do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "8c728e8060587c2a28f43376fc620c2702af44e3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 217,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:42:51.642168Z",
+    "message": "Add subpastas da pasta util/Minimization_Monitor do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "b906c8c04b47afbff227479f6a834dbe834b8245"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 218,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:44:34.296433Z",
+    "message": "Add subpastas da pasta util/Conventional_Monitor do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "f189f713bec92a6ae6a93761bbf20b30998502ea"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 219,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:49:24.182985Z",
+    "message": "Add subpastas da pasta util/ecbuild-develop do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "83ee33198fba09c31b3fc5c8e1b4eb28ee6fe1f5"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 220,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:52:14.441331Z",
+    "message": "Add subpastas da pasta util/Radar_Monitor do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "d1c2710103b11432c1206c0164329096efed23f3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 221,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:53:42.565288Z",
+    "message": "Add subpastas da pasta util/Radar_Utilities do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "3f3a817db2dd0d6d4f80ec56b9e26f723d229d9e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 222,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:57:04.768873Z",
+    "message": "Add subpastas da pasta util/NMC_Bkerror do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "086db2d3bb2d6ba00e3ab3357e7263f241ad6b79"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 223,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T21:58:44.713694Z",
+    "message": "Add subpastas que faltam da pasta util do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "6e95bafe557e2cc4866c6e424c7eca30f1d49719"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 224,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:02:37.789914Z",
+    "message": "Criando estrutura da pasta gsi/libsrc",
+    "commits": [
+      "26d190c947c9e8d848c8ef8913fff36730056d70"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 225,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:07:50.432594Z",
+    "message": "Criando estrutura da pasta gsi/libsrc/crtm-master",
+    "commits": [
+      "e4cddbf1b1f1ab7c1d9ad9e12947b1f7d48a815f"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 226,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:08:23.427232Z",
+    "message": "Criando estrutura da pasta gsi/libsrc/crtm-master/src",
+    "commits": [
+      "a1daa462dd56ce6e87665fc76490d61a70bbb532"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 227,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:09:26.187483Z",
+    "message": "Criando estrutura da pasta gsi/libsrc/crtm-master/src/Coefficients",
+    "commits": [
+      "dc9fa0e084017b9cb19eb6569802f0fd390f05cd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 228,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:11:41.758322Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/TauCoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "b15ef38095f1a0ab911308edfbde5266f017720b"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 229,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:13:15.328416Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/SpcCoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "9be79ea970ffe28a8abb1f8f898475c97ed138d3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 230,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:14:10.056803Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/NLTECoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "f80c70052bbfeb81268dc98a06d468423cbec364"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 231,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:14:56.597991Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/FitCoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "6a5360743c6f0b07daf35dd8399c342525dacf16"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 232,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:15:42.008748Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/EmisCoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "5af5e29c612bb550c6a236c78ed88e69eb55d115"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 233,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:16:21.244347Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients/CloudCoeff do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "834cb5130a84529e8e1643234a22e2a0272a9629"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 234,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:17:29.005579Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Coefficients do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "3ddaa43e39c3a5dcbd12007106394f67125096dd"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 235,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:25:21.913021Z",
+    "message": "Criando estrutura da pasta gsi/libsrc/crtm-master/src/TauProd",
+    "commits": [
+      "2f28fb0d8938a339dcadd73c73a754d543d99f6e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 236,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:28:39.148491Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/TauProd/LBL do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "a714bb1424d6c9122fde7ec5977a532a9641f846"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 237,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:30:18.110061Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/TauProd/Infrared do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "424d269ea4a60796386c5f4648d23467d1e8b091"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 238,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:31:34.926029Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/TauProd do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "50eb0b5518b1c73d89be3de14a31c2e74bb5b3a1"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 239,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:32:57.589388Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/TauRegress do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "bb599bf9a09351b6ae16731d722bd78873f6bac9"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 240,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:34:11.428657Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/SfcOptics do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "c21c0f54c4c0537703120de7e1c7282bb8a7b0f0"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 241,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:36:10.638424Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/InstrumentInfo do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "2c64e8399d6e7a7a294db8d39fe82fc32af15b0e"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 242,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:37:22.763917Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/User_Code do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "14564632f176b0a429c4411bc258b3c68f761fb8"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 243,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:38:04.525320Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src/Utility do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "854f1b3a08f0a77cb1d5104ec2c251c23dc9b249"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 244,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:39:06.056401Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master/src do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "80f557c1b8a34a1c4e61e09c163fd180428c92de"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 245,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:40:39.473747Z",
+    "message": "Add subpastas da pasta libsrc/crtm-master do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "47b2b7e656effd2a3b433dd12aa8515feb94bd1d"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 246,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:45:40.520887Z",
+    "message": "Add subpastas que faltam da pasta libsrc do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "d40113a606dc84499d099feb597b9832af4277c3"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 247,
+    "author": "caroline.viezel",
+    "date": "2026-05-12T22:50:00.159103Z",
+    "message": "Add arquivos que faltam da pasta do gsi local: gsi_t11824 revisão 100",
+    "commits": [
+      "856f904fe4262f67e1738e05818e29f681cd4407"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 248,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T13:13:49.464319Z",
+    "message": "Add arquivos e diretórios da pasta inctime do utils local: utils revisão 122",
+    "commits": [
+      "b6e1cc1203015683c952260359ea53c475fae677"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 249,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T13:37:47.607616Z",
+    "message": "Removendo svn:external do inctime",
+    "commits": [
+      "3eebd24d71394865ab9362efb3272aa367f2fefa"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 250,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T13:55:04.401354Z",
+    "message": "Revertendo revisoes r248 e r249 devido a problemas com a pasta inctime",
+    "commits": [
+      "a623de3b532f3b4f03523a28dff220015d24acbe"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 251,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T14:36:17.125227Z",
+    "message": "Removido link externo svn:externals e adicionada a pasta inctime como diretorio local definitivo",
+    "commits": [
+      "ccd972ed061d1b73c5d58cb2659a5d222301d53a"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 252,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T15:12:34.730171Z",
+    "message": "Forçando limpeza de svn:externals oculta em utils",
+    "commits": [
+      "53d82f6455d4dd80a7b543704567b8d57cb1b761"
+    ],
+    "status": "date and message match"
+  },
+  {
+    "revision": 253,
+    "author": "caroline.viezel",
+    "date": "2026-05-13T17:20:37.506200Z",
+    "message": "Ajustando os arquivos cptec/bam/run/runModel; run/scripts/gsi_scripts/runGSI_Functions.sh e run/scripts/runGSI como cópia das configurações na instalação de trabalho do Sapucci.",
+    "commits": [
+      "df02a7289ebf3b3be6e37c9562e3c7051550d907"
+    ],
+    "status": "date and message match"
+  }
+]
