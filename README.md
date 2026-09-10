@@ -1,4 +1,4 @@
-# SMNA – Sistema de Modelagem Numérica e Assimilação
+# SMNA – Sistema de Modelagem Numérica e Assimilação de dados
 
 O **SMNA** é o acoplamento do Modelo Atmosférico Global Brasileiro (**BAM – Brazilian Global Atmospheric Model**) em sua versão com coordenada vertical híbrida com o Sistema de Assimilação de Dados **GSI – Global Statistical Interpolation**.
 
