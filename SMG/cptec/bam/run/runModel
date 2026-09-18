@@ -276,8 +276,8 @@ case ${hpc_name} in
         MaxCoresPerNode=${CoresPerNode:-128}
         ;;
     jaci)
-        MPITasks=${MPITasks:-64}
-        TasksPerNode=${TasksPerNode:-16}
+        MPITasks=${MPITasks:-128}
+        TasksPerNode=${TasksPerNode:-128}
         CoresPerNode=${CoresPerNode:-128}
         MaxCoresPerNode=${CoresPerNode:-128}
         ;;

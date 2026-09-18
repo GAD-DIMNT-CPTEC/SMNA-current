@@ -531,7 +531,7 @@ case ${hpc_name} in
             printf '%s\n' '#PBS -S /bin/bash'
             printf '%s\n' '#PBS -o '"${dirExec}/Out.MPI${MPITasks}"
             printf '%s\n' '#PBS -l walltime='${walltime}
-            printf '%s\n' '#PBS -l select='${Nodes}':ncpus='${MaxCoresPerNode}':mpiprocs='${MaxCoresPerNode}
+            printf '%s\n' '#PBS -l select='${Nodes}':ncpus='${MaxCoresPerNode}':mpiprocs='${TasksPerNode}
             printf '%s\n' '#PBS -N '"${queue_name}"
             printf '%s\n' '#PBS -q '"${queue}"
             printf '%s\n' '#PBS -l place=scatter:excl'

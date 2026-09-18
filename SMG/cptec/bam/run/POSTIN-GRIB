@@ -16,7 +16,7 @@
                        !    nffrs=0  - for runs without normal mode initialization
                        !    nffrs=1  - for warm start runs
   nfbeg=-1,            ! number of the first forecasted file to be post-processed
-  nfend=2000,          ! number of forecasted files to be post-processed
+  nfend=44,          ! number of forecasted files to be post-processed
   nmand=32,            ! number of pressure levels listed below in format 10f8.2
                        !    nmand=-1 means the use of default 18-levels
   RegIntIn=#REGINT#,     ! flag to interpolate outputs on regular grid (.TRUE.)
