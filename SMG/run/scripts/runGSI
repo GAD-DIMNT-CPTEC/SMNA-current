@@ -146,7 +146,13 @@ fi
 #
 
 if [ ${ObsMod} == "false" ]; then
-  linkObs ${AnlDate} ${RunDir}
+  echo ""
+  echo -e "\033[34;1m >>>> Carregando arquivos prepBufrs do INPE \033[m"
+  linkObsINPE ${AnlDate} ${RunDir} 
+  echo ""
+  echo -e "\033[34;1m >>>> Carregando arquivos prepBufrs do NCEP \033[m"
+  linkObsNCEP ${AnlDate} ${RunDir} 
+  echo ""
 fi
 
 #-----------------------------------------------------------#
