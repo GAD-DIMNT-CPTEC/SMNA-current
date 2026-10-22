@@ -92,7 +92,9 @@ LOCALDIR=$(dirname $(readlink -e ${0}))
 # Caso Egeon
 #source /home/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/bam/run/EnvironmentalVariables_Model
 # Caso Jaci
-source /p/projetos/monan_das/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/bam/run/EnvironmentalVariables_Model
+
+grupo=$(id -nG $USER | awk '{print $NF}')
+source /p/projetos/${grupo}/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/bam/run/EnvironmentalVariables_Model
 
 # Check for command-line arguments, if none, show help
 if [ $# -eq 0 ]; then

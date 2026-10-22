@@ -80,6 +80,7 @@ assign(){
 #BOC
 vars_export(){
   module swap PrgEnv-cray PrgEnv-intel
+  grupo=$(id -nG $USER | awk '{print $NF}')
   FilePaths=$(dirname ${BASH_SOURCE})/mach/${hpc_name}_paths.conf
   
   if [[ ! -f ${FilePaths} ]]; then
@@ -411,7 +412,7 @@ compile(){
     fi
   fi
 
-  if [[ ${compang} -eq 1 ]]; then
+  if [[ ${compang} -eq 0 ]]; then
     echo "[INFO] Compiling GSI bias correction utility..."
 
     source ./env.sh ${hpc_name} ${compiler}

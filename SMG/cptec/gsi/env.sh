@@ -292,7 +292,8 @@ RootDir="$(dirname "$SCRIPT_PATH")"
 
 # Assign necessary paths
 if [ "${machine,,}" == "jaci" ]; then
-    assign DIRGSI "/p/projetos/monan_das/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/gsi"
+    grupo=$(id -nG $USER | awk '{print $NF}')
+    assign DIRGSI "/p/projetos/${grupo}/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/gsi"
 else 
     assign DIRGSI "$(pwd)"
 fi
