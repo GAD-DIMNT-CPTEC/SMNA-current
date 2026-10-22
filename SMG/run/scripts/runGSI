@@ -287,7 +287,7 @@ for cycle in $(seq 0 ${BcCycles} ); do
 #   fi
 
    #-----------------------------------------------------------#
-   # Copy files to output diretory
+   # Copy files to output diretory and remove the GSI RunDir
    #
 
    if [ ${BcCycles} -gt 0 ];then
@@ -313,6 +313,7 @@ for cycle in $(seq 0 ${BcCycles} ); do
 
    else
       copyFiles ${RunDir} ${DataOutDir}
+      rm -rf ${RunDir} 
    fi
 
 done

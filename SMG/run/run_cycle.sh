@@ -345,11 +345,22 @@ while [ ${LABELI} -le ${LABELF} ]; do
       /bin/bash ${scripts_smg}/run_model.sh ${LABELI} ${FCT_DATE} ${modelPrefix} ${modelTrunc} ${modelNLevs} ${modelMPITasks} No
       if [ $? -ne 0 ]; then  echo -e "\033[31;1m > Falha no modelo :\033[m \033[33;1mVerifique PRE, BAM ou POS\033[m"; exit 1; fi
       
+      # Removendo o restat da rodada do modelo caso não seja a rodada das 00:00 UTC
+      
+      if [ ${LABELI:9:1} -eq 0 ]   ; then   
+          echo "Restart do modelo mantido por segurança"
+          ls $subt_model_bam/dataout/TQ0299L064/DAS/${LABELI}
+      else
+        echo "Restart do modelo removido para melhor uso de espaco"
+        rm -rf $subt_model_bam/dataout/TQ0299L064/DAS/${LABELI}/RST
+      fi      
+      
       echo ""
       duration=$SECONDS
       echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
       echo -e "\033[34;1m > Fim do MCGA \033[m"
    fi
+
    ### LABELI=$(${inctime} ${LABELI} +6h %y4%m2%d2%h2)
    LABELI=`date -u +%Y%m%d%H -d "${LABELI:0:8} ${LABELI:8:2} +6 hours" ` 
 

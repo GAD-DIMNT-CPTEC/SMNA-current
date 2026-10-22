@@ -998,8 +998,17 @@ copyFiles (){
    find -P -O3 ${fromDir} -maxdepth 1 -type f -iname "diag_*" -exec mv -f {} ${toDir} \;
    find -P -O3 ${fromDir} -maxdepth 1 -type f -iname "fort.*" -exec mv -f {} ${toDir} \;
 
-   mv -f ${fromDir}/diag ${toDir}
+   # remove o arquvvo de setup que é muito gande mais não é usado no diag.
+   rm ${toDir}/diag_obs_setup.*
 
+ 
+   # nao salvar os diags de processadores
+   # mv -f ${fromDir}/diag ${toDir}
+   
+   # Salvar os arquivos bufrs usados pelo no GSI
+   mv -f ${fromDir}/*bufr* ${toDir}   
+  
+   
    ${MV} ${fromDir}/BAM.anl ${toDir}/GANL${BkgPrefix}${AnlDate}S.unf.${BkgMRES}
    # copy para manter 
    ${CP} ${fromDir}/${satbiasIn} ${toDir}/.
