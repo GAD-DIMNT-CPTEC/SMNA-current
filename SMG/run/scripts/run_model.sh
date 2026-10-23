@@ -125,13 +125,20 @@ then
 else 
   export RUNPOS="yes"
 fi
+if [ -z "${8}" ]
+then
+  echo "Queue is not set, using default"
+  Queue=pesqmidi
+else
+  Queue=${8}
+fi
 
 case ${hpc_name} in
    egeon) tasks_per_node=16
 	        cpus_per_task=8
 	;;
-   jaci) tasks_per_node=16
-	        cpus_per_task=8
+   jaci) tasks_per_node=128
+	        cpus_per_task=1
 	;;
    XC50)  tasks_per_node=10
 	        cpus_per_task=4
@@ -168,7 +175,7 @@ cd ${home_run_bam}
 # rodando o somente o Chopping do pré para pegar o arquivo de ozônio
 # saida gerada no bam/model/datain/ 
 
-/bin/bash runPre -v -t ${TRC} -l ${NLV} -I ${LABELANL} -s -n chp -O
+/bin/bash runPre -v -t ${TRC} -l ${NLV} -I ${LABELANL} -s -n chp -O -pq ${Queue}
 
 STATUS=$?
 echo "1st call to runPre. Status: "${STATUS}
@@ -196,7 +203,7 @@ cp -pfr ${gsiDataOut}/GANL${PREFIX}${LABELANL}S.unf.${MRES} ${modelDataIn}
 #
 # /bin/bash runPre -v -t 299 -l 64 -I ${LABELANL}  -n 0 -p SMT -s -O -T -G -Gp gblav -Gt Grid
 
-/bin/bash runPre -v -t ${TRC} -l ${NLV} -I ${LABELANL} -p CPT -n das
+/bin/bash runPre -v -t ${TRC} -l ${NLV} -I ${LABELANL} -p CPT -n das -pq ${Queue}
 STATUS=$?
 echo "2nd call to runPre. Status: "${STATUS}
 if [ ${STATUS} -ne 0 ];then
@@ -206,7 +213,7 @@ fi
 # Rodando o Modelo
 /bin/bash runModel -das -v -np ${NPROC} -N ${tasks_per_node} -d ${cpus_per_task} \
                    -t ${TRC} -l ${NLV} -I ${LABELANL} -F ${LABELFCT} -W  ${LABELFCT} \
-                   -px CPT -py ${PREFIX} -s sstwkl -ts 3 -r -tr 6 -i -3 -s sstwkl
+                   -px CPT -py ${PREFIX} -s sstwkl -ts 3 -r -tr 6 -i -3 -s sstwkl -pq ${Queue}
 
 
 # Pos-processa as previsoes caso a variavel RUNPOS possua o valor Yes ou Y

@@ -263,6 +263,11 @@ case ${hpc_name} in
       queue=batch 
     fi
 ;;
+  jaci)
+    if [ -z ${queue} ];then
+      queue=pesqmidi
+    fi
+;;
   XC50)
     if [ -z ${queue} ];then
       queue=pesq
@@ -410,13 +415,13 @@ fi
 mpirun -np \$SLURM_NTASKS  ./${POSEXE} < ${POSNML} > setout/${POSLOG} 
 DATAOUT=${DATAOUT}
     
-    module load grads-2.2.1
-    for arqctl in \$(find \${DATAOUT} -name "*.ctl")
-    do
+   # module load grads/2.2.1
+   # for arqctl in \$(find \${DATAOUT} -name "*.ctl")
+   # do
     
-      gribmap -i \${arqctl} 
+   #   gribmap -i \${arqctl} 
     
-    done
+   # done
 
 
 EOT1
@@ -429,25 +434,44 @@ EOT1
 
     echo -ne "\033[34;1m Submiting POS to queue \033[m"
 
-    sbatch --export=NONE ./${POSSCP}
+    #sbatch --export=NONE ./${POSSCP}
 
-    # PID=$(sbatch --wait ./${POSSCP}; exit ${PIPESTATUS[0]})
-    # qstatus=$?
-    # if [ ${qstatus} -eq 0 ];then
-    #   echo -e "\033[34;1m [\033[m\033[32;2m OK \033[m\033[34;1m]\033[m"
-    #else
-    #   echo -e "\033[34;1m[\033[m\033[31;1m Fail \033[m\033[34;1m]\033[m"
-    #   exit ${qstatus}
-    #fi
-    
-#    module load grads-2.2.1
-#    for arqctl in $(find ${DATAOUT} -name "*.ctl")
-#    do
-#    
-#      gribmap -i ${arqctl} 
-#    
-#    done
-    
+    PID=$(sbatch --wait ./${POSSCP}; exit ${PIPESTATUS[0]})
+    qstatus=$?
+    if [ ${qstatus} -eq 0 ];then
+       echo -e "\033[34;1m [\033[m\033[32;2m OK \033[m\033[34;1m]\033[m"
+    else
+       echo -e "\033[34;1m[\033[m\033[31;1m Fail \033[m\033[34;1m]\033[m"
+       exit ${qstatus}
+    fi
+
+    ${LOCALDIR}/../../../run/scripts/check_ctl_files.sh ${DATAOUT}    
+    ctl_status=$?
+    if [ ${ctl_status} -eq 0 ]; then
+       echo -e "\033[34;1m [\033[m\033[32;2m CTL check OK \033[m\033[34;1m]\033[m"
+    else
+       echo -e "\033[34;1m[\033[m\033[31;1m CTL check Fail \033[m\033[34;1m]\033[m"
+       exit ${ctl_status}
+    fi
+
+    files=$(find "${DATAOUT}" -name "*.fct.*.ctl")
+    if [ -n "${files}" ]; then
+        module load grads/2.2.1
+	echo -ne "\033[34;1m Gerando GRIB index files \033[m"
+        for arqctl in ${files}; do
+            # Forecast vs. Analysis Time Conflict Problem: GRIB files containing reanalysis or unevenly spaced forecast horizons confuse the indexer
+            # Fix: For forecast sequences, ensure the sequence steps (0, 12, 24...) align exactly, or use the -t0 flag to lock into the initial base time
+            gribmap -t0 -i "${arqctl}"
+            idx_status=$?
+            if [ ${idx_status} -ne 0 ]; then
+                echo "Erro ao processar ${arqctl}. Exit status: ${idx_status}"
+                #exit ${idx_status}
+            fi
+        done
+    else
+        echo "Nenhum arquivo .ctl encontrado em ${DATAOUT}"
+    fi
+
     exit 0
   ;;
   XC50)
