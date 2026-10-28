@@ -103,12 +103,13 @@ case ${hpc_name} in
       export WORKBASE="/mnt/beegfs/${USER}/SMNA_v3.0.0.t12717/SMG/datainout/bam"
       ;;
    jaci)
+      grupo=$(id -nG $USER | awk '{print $NF}')
 	# Caminho do BAM no HOME  
-      export HOMEBASE="/p/projetos/monan_das/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/bam"
+      export HOMEBASE="/p/projetos/${grupo}/${USER}/SMNA_v3.0.0.t12717/SMG/cptec/bam"
 	# Caminho do BAM no scratchin (SUBMIT_HOME)
-      export SUBTBASE="/p/projetos/monan_das/${USER}/SMNA_v3.0.0.t12717/SMG/datainout/bam"
+      export SUBTBASE="/p/projetos/${grupo}/${USER}/SMNA_v3.0.0.t12717/SMG/datainout/bam"
 	# Caminho do BAM no scratchout (SUBMIT_WORK)
-      export WORKBASE="/p/projetos/monan_das/${USER}/SMNA_v3.0.0.t12717/SMG/datainout/bam"
+      export WORKBASE="/p/projetos/${grupo}/${USER}/SMNA_v3.0.0.t12717/SMG/datainout/bam"
       ;;
 esac
 
