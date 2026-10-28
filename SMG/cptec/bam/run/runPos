@@ -110,6 +110,16 @@ case $lognode in
     fi
     ;;
 
+  ian0?)
+    STR=`uname -a`
+    echo $STR
+    SUB='ian'
+    if [[ "$STR" == *"$SUB"* ]]; then
+      echo -n "This will run on JACI Cluster ..."
+      export hpc_name="jaci"
+    fi
+    ;;
+
   *)
     mach=`cat /proc/sys/kernel/hostname`
     echo -n "The configurations for "$mach" is not defined yet !"
@@ -267,6 +277,10 @@ case ${hpc_name} in
     if [ -z ${queue} ];then
       queue=pesqmidi
     fi
+    Nodes=1
+    MaxCoresPerNode=128
+    TasksPerNode=128
+    MPITasks=64
 ;;
   XC50)
     if [ -z ${queue} ];then
@@ -350,8 +364,8 @@ fi
 #
 set -x
 #if [ ! -e ${POSRUN}/${POSEXE} ]; then
-   #cp -vpfr ${HOMEBASE}/pos/exec/${POSEXE} ${POSRUN}
-   cp -vpfr ${HOMEBASE}/pos/source/${POSEXE} ${POSRUN}  
+   cp -vpfr ${HOMEBASE}/pos/exec/${POSEXE} ${POSRUN}
+#   cp -vpfr ${HOMEBASE}/pos/source/${POSEXE} ${POSRUN}  
 #fi
 set +x
 
@@ -474,6 +488,98 @@ EOT1
 
     exit 0
   ;;
+  jaci) cat <<EOT1 >${POSRUN}/${POSSCP}
+#!/bin/bash
+#PBS -o ${POSRUN}/setout/Out.pos.${PREFIX}.${LABELI}.${tmstp}.MPI${MPITasks}.out
+#PBS -j oe
+#PBS -l walltime=${walltime}
+#PBS -l select=${Nodes}:ncpus=${MaxCoresPerNode}:mpiprocs=${TasksPerNode}
+#PBS -V
+#PBS -S /bin/bash
+#PBS -N Pos${LABELI:4:6}
+#PBS -q ${queue}
+
+#module purge
+#module load intel/2021.4.0
+#module load mpi/2021.4.0 impi/2021.4.0
+#module load netcdf/4.7.4 pnetcdf/1.12.2 netcdf-fortran/4.5.3
+#module list
+
+# Modulos do Ambiente Cray da Jaci
+module swap PrgEnv-cray PrgEnv-intel
+module load cray-libpals cray-pals
+module load cray-hdf5 cray-netcdf cray-parallel-netcdf
+module list
+
+cd ${POSRUN}
+
+ulimit -s unlimited
+ulimit -c unlimited
+export I_MPI_DEBUG=15
+
+# export OMP_WAIT_POLICY=PASSIVE
+export OMP_NUM_THREADS=\$SLURM_CPUS_PER_TASK
+# export MPICH_ENV_DISPLAY=1
+# export MPICH_NO_BUFFER_ALIAS_CHECK=1
+
+export KMP_STACKSIZE=256m
+
+#mpirun -np \$SLURM_NTASKS  ./${POSEXE} < ${POSNML} > setout/${POSLOG} 
+time mpiexec -n ${MPITasks} --depth=${ThreadsPerMPITask}  ./${POSEXE} < ${POSNML} > setout/${POSLOG} 
+
+DATAOUT=${DATAOUT}
+    
+EOT1
+    cd ${POSRUN}
+#
+#   Change mode to be executable
+#
+    chmod a+x ${POSRUN}/${POSSCP}
+    pwd; ls -l
+
+    echo -ne "\033[34;1m Submiting POS to queue \033[m"
+    PID=$(qsub -W block=true ${POSSCP}; exit ${PIPESTATUS[0]})
+
+    qstatus=$?
+    if [ ${qstatus} -eq 0 ];then
+       echo -e "\033[34;1m [\033[m\033[32;2m OK \033[m\033[34;1m]\033[m"
+    else
+       echo -e "\033[34;1m[\033[m\033[31;1m Fail \033[m\033[34;1m]\033[m"
+       exit ${qstatus}
+    fi
+
+    
+    ${LOCALDIR}/../../../run/scripts/check_ctl_files.sh ${DATAOUT}    
+    ctl_status=$?
+    if [ ${ctl_status} -eq 0 ]; then
+       echo -e "\033[34;1m [\033[m\033[32;2m CTL check OK \033[m\033[34;1m]\033[m"
+    else
+       echo -e "\033[34;1m[\033[m\033[31;1m CTL check Fail \033[m\033[34;1m]\033[m"
+       exit ${ctl_status}
+    fi
+
+    files=$(find "${DATAOUT}" -name "*.fct.*.ctl")
+    if [ -n "${files}" ]; then
+        module load grads/2.2.1
+	echo -ne "\033[34;1m Gerando GRIB index files \033[m"
+        for arqctl in ${files}; do
+            # Forecast vs. Analysis Time Conflict Problem: GRIB files containing reanalysis or unevenly spaced forecast horizons confuse the indexer
+            # Fix: For forecast sequences, ensure the sequence steps (0, 12, 24...) align exactly, or use the -t0 flag to lock into the initial base time
+            gribmap -t0 -i "${arqctl}"
+            idx_status=$?
+            if [ ${idx_status} -ne 0 ]; then
+                echo "Erro ao processar ${arqctl}. Exit status: ${idx_status}"
+                #exit ${idx_status}
+            fi
+        done
+    else
+        echo "Nenhum arquivo .ctl encontrado em ${DATAOUT}"
+    fi
+
+    exit 0
+  ;;
+
+
   XC50)
 cat << EOF >${POSRUN}/${POSSCP}
 #!/bin/bash
