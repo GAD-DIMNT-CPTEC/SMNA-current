@@ -62,13 +62,13 @@ usage() {
    sed -n '/^#BOP/,/^#EOP/{/^#BOP/d;/^#EOP/d;p}' ${BASH_SOURCE}
 }
 
-modelMPITasks=64  # Number of Processors used by model
+modelMPITasks=128  # Number of Processors used by model
 modelFCT=09        # Time length of model forecasts
 gsiMPITasks=144    # Number of Processors used by gsi
 
 do_obsmake=0
-do_gsi=0 
-do_bam=0
+do_gsi=1
+do_bam=1
 
 i=1
 flag=0
@@ -351,8 +351,9 @@ while [ ${LABELI} -le ${LABELF} ]; do
           echo "Restart do modelo mantido por segurança"
           ls $subt_model_bam/dataout/TQ0299L064/DAS/${LABELI}
       else
-        echo "Restart do modelo removido para melhor uso de espaco"
-        rm -rf $subt_model_bam/dataout/TQ0299L064/DAS/${LABELI}/RST
+        #echo "Restart do modelo removido para melhor uso de espaco"
+        #rm -rf $subt_model_bam/dataout/TQ0299L064/DAS/${LABELI}/RST
+	# comentei esse rm. aparentemente fez diferença
       fi      
       
       echo ""

@@ -629,5 +629,3 @@ else
    cat ${dirExec}/saida_${labelOut}.txt | grep -i warning | sort -u 
    exit $status
 fi
-
-

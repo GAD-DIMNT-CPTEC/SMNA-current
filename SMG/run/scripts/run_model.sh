@@ -110,7 +110,7 @@ then
              	export NPROC=64  # ntasks
 	;;
 	jaci)  echo "setting to 64"
-             	export NPROC=64  # ntasks
+             	export NPROC=128  # ntasks #alterei aqui de 64 pra 128
 	;;
   	XC50)  	echo "setting to 480"
   		export NPROC=480             	
